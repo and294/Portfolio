@@ -17,9 +17,14 @@ body {
   line-height: 1.5;
 }
 
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
+.name {
+  font-size: 30px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.text {
+  font-size: 10px;
 }
