@@ -42,7 +42,6 @@ body {
 }
 
 .name {
-  
   font-size: 30px;
 }
 
@@ -53,3 +52,18 @@ body {
 .text {
   font-size: 10px;
 }
+
+.presentation {
+  background-color: blue;
+  height: 100vh;
+}
+
+.competence {
+  heigth: 100vh;
+}
+
+.realisation {
+  height: 100vh;
+}
+
+
