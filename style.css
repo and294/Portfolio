@@ -13,7 +13,6 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  line-height: 1.5;
 }
 
 .nav {
@@ -31,11 +30,19 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  
+}
+
+.nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  margin-top: 60px;
 }
 
 .name {
-  margin-top: 30px;
+  
   font-size: 30px;
 }
 
