@@ -58,12 +58,6 @@ body {
   height: 100vh;
 }
 
-@media screen and (min-width: 1024px){
-  #cvPres {
-    width: 50vw;
-  }
-}
-
 
 .competence {
   heigth: 100vh;
@@ -75,4 +69,21 @@ body {
   background-color: green;
 }
 
-
+/*Desktop*/
+@media screen and (min-width: 1024px){
+  #cvPres {
+    width: 50vw;
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  #cvPres {
+    width: 50vw;
+  }
+}
+/*Phone*/
+@media screen and (max-width: 767px){
+  #cvPres {
+    width: 50vw;
+  }
+}
