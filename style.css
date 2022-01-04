@@ -80,7 +80,12 @@ body {
   }
   
   .photo{
-    
+    width: 200px;
+    height: 200px;
+    border: solid black;
+    border-radius: 100%;
+    text-align: center;
+    align-self: center;
   }
   
   #propo {
@@ -106,7 +111,12 @@ body {
   }
   
   .photo{
-    
+    width: 200px;
+    height: 200px;
+    border: solid black;
+    border-radius: 100%;
+    text-align: center;
+    align-self: center;
   }
   
   #propo {
@@ -135,7 +145,7 @@ body {
     border: solid black;
     border-radius: 100%;
     text-align: center;
-    padding-top: 50%
+    align-self: center;
   }
   
   #propo {
