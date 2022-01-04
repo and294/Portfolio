@@ -56,6 +56,8 @@ body {
 .presentation {
   background-color: blue;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -71,23 +73,47 @@ body {
 
 /*Desktop*/
 @media screen and (min-width: 1024px){
+  #propo {
+    width: 50vw;
+    text-align: justify;
+    align-self: end;
+    margin-right: 70px;
+  }
+  
   #cvPres {
     width: 50vw;
     text-align: justify;
-    
+    align-self: end;
+    margin-right: 70px;
   }
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
+  #propo {
+    width: 50vw;
+    text-align: justify;
+    align-self: end;
+    margin-right: 50px;
+  }
+  
   #cvPres {
     width: 50vw;
     text-align: justify;
+    align-self: end;
+    margin-right: 50px;
   }
 }
 /*Phone*/
 @media screen and (max-width: 767px){
+  #propo {
+    width: 80vw;
+    text-align: center;
+    align-self: center;
+  }
+  
   #cvPres {
-    width: 50vw;
+    width: 80vw;
     text-align: justify;
+    align-self: center;
   }
 }
