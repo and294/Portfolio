@@ -56,6 +56,7 @@ body {
 .presentation {
   background-color: blue;
   height: 100vh;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -73,6 +74,11 @@ body {
 
 /*Desktop*/
 @media screen and (min-width: 1024px){
+  .presentation {
+    padding-top: 100px;
+  }
+  
+  
   .name{
       width: 80vw;
    align-self: center; 
@@ -85,7 +91,9 @@ body {
     border: solid black;
     border-radius: 100%;
     text-align: center;
-    align-self: center;
+    position: fixed;
+    margin-left: 15vw;
+    margin-top: 8vh;
   }
   
   #propo {
