@@ -73,6 +73,16 @@ body {
 
 /*Desktop*/
 @media screen and (min-width: 1024px){
+  .name{
+      width: 80vw;
+   align-self: center; 
+   text-align: center;
+  }
+  
+  .photo{
+    
+  }
+  
   #propo {
     width: 50vw;
     text-align: justify;
@@ -89,22 +99,45 @@ body {
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
+  .name{
+   width: 80vw;
+   align-self: center; 
+   text-align: center; 
+  }
+  
+  .photo{
+    
+  }
+  
   #propo {
-    width: 50vw;
-    text-align: justify;
-    align-self: end;
-    margin-right: 50px;
+   width: 80vw;
+    text-align: center;
+    align-self: center;
   }
   
   #cvPres {
-    width: 50vw;
+    width: 80vw;
     text-align: justify;
-    align-self: end;
-    margin-right: 50px;
+    align-self: center;
   }
 }
 /*Phone*/
 @media screen and (max-width: 767px){
+  .name{
+   width: 80vw;
+   align-self: center; 
+   text-align: center; 
+  }
+  
+  .photo{
+    width: 200px;
+    height: 200px;
+    border: solid black;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 50%
+  }
+  
   #propo {
     width: 80vw;
     text-align: center;
