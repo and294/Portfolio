@@ -73,17 +73,21 @@ body {
 @media screen and (min-width: 1024px){
   #cvPres {
     width: 50vw;
+    text-align: justify;
+    
   }
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
   #cvPres {
     width: 50vw;
+    text-align: justify;
   }
 }
 /*Phone*/
 @media screen and (max-width: 767px){
   #cvPres {
     width: 50vw;
+    text-align: justify;
   }
 }
