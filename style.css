@@ -22,7 +22,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  weight: 
+  font-weight: bold;
+  opacity: 0.3;
 }
 
 .nav a {
@@ -37,6 +38,7 @@ body {
 .nav a:hover {
   background: #ddd;
   color: black;
+  opacity: 1;
 }
 
 .main {
