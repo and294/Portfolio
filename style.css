@@ -79,8 +79,11 @@ body {
   .hello {
     text-align: center;
     position: absolute;
-    margin-left: 18.2vw;
+    margin-left: 18.2vw; 
+    
   }
+  
+ 
   
   .presentation {
     padding-top: 100px;
