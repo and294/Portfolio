@@ -66,12 +66,12 @@ body {
 
 .competence {
   height: 100vh;
-  background-color: red;
+  background-color: #f0f8ff;
 }
 
 .realisation {
   height: 100vh;
-  background-color: green;
+  background-color: #f0f8ff;
 }
 
 /*Desktop*/
@@ -79,8 +79,8 @@ body {
   .hello {
     text-align: center;
     position: absolute;
-    margin-left: 18.2vw; 
-    
+    margin-left: 18.3vw; 
+    margin-top: -30px;
   }
   
  
@@ -135,12 +135,13 @@ body {
   }
 
   .photo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: solid black;
     border-radius: 100%;
     text-align: center;
     align-self: center;
+   
   }
 
   #propo {
