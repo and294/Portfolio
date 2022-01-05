@@ -76,6 +76,12 @@ body {
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
+  .hello {
+    text-align: center;
+    position: absolute;
+    margin-left: 18.2vw;
+  }
+  
   .presentation {
     padding-top: 100px;
   }
@@ -113,6 +119,12 @@ body {
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hello{
+    width: 80vw;
+    text-align: center;
+    align-self: center;
+  }
+  
   .name {
     width: 80vw;
     align-self: center;
@@ -142,6 +154,12 @@ body {
 }
 /*Phone*/
 @media screen and (max-width: 767px) {
+  .hello{
+    width: 80vw;
+    text-align: center;
+    align-self: center;
+  }
+  
   .name {
     width: 80vw;
     align-self: center;
