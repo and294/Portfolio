@@ -1,11 +1,12 @@
-
 /* default to border-box */
 html {
   box-sizing: border-box;
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -16,11 +17,12 @@ body {
 }
 
 .nav {
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
+  weight: 
 }
 
 .nav a {
@@ -54,16 +56,15 @@ body {
 }
 
 .presentation {
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   height: 100vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
 }
 
-
 .competence {
-  heigth: 100vh;
+  height: 100vh;
   background-color: red;
 }
 
@@ -73,19 +74,18 @@ body {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .presentation {
     padding-top: 100px;
   }
-  
-  
-  .name{
-      width: 80vw;
-   align-self: center; 
-   text-align: center;
+
+  .name {
+    width: 80vw;
+    align-self: center;
+    text-align: center;
   }
-  
-  .photo{
+
+  .photo {
     width: 200px;
     height: 200px;
     border: solid black;
@@ -95,14 +95,14 @@ body {
     margin-left: 15vw;
     margin-top: 8vh;
   }
-  
+
   #propo {
     width: 50vw;
     text-align: justify;
     align-self: end;
     margin-right: 70px;
   }
-  
+
   #cvPres {
     width: 50vw;
     text-align: justify;
@@ -111,14 +111,14 @@ body {
   }
 }
 /*Tablet*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
-  .name{
-   width: 80vw;
-   align-self: center; 
-   text-align: center; 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .name {
+    width: 80vw;
+    align-self: center;
+    text-align: center;
   }
-  
-  .photo{
+
+  .photo {
     width: 200px;
     height: 200px;
     border: solid black;
@@ -126,13 +126,13 @@ body {
     text-align: center;
     align-self: center;
   }
-  
+
   #propo {
-   width: 80vw;
+    width: 80vw;
     text-align: center;
     align-self: center;
   }
-  
+
   #cvPres {
     width: 80vw;
     text-align: justify;
@@ -140,14 +140,14 @@ body {
   }
 }
 /*Phone*/
-@media screen and (max-width: 767px){
-  .name{
-   width: 80vw;
-   align-self: center; 
-   text-align: center; 
+@media screen and (max-width: 767px) {
+  .name {
+    width: 80vw;
+    align-self: center;
+    text-align: center;
   }
-  
-  .photo{
+
+  .photo {
     width: 200px;
     height: 200px;
     border: solid black;
@@ -155,13 +155,13 @@ body {
     text-align: center;
     align-self: center;
   }
-  
+
   #propo {
     width: 80vw;
     text-align: center;
     align-self: center;
   }
-  
+
   #cvPres {
     width: 80vw;
     text-align: justify;
