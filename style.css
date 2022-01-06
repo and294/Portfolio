@@ -17,7 +17,7 @@ body {
 }
 
 .nav {
-  background-color: #f0f8ff;
+  background-color: rgba(240, 248, 255, 0.5);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -96,6 +96,7 @@ body {
     width: 80vw;
     align-self: center;
     text-align: center;
+    
   }
 
   .photo {
