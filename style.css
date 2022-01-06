@@ -47,6 +47,9 @@ body {
 .name {
   font-size: 40px;
 }
+.front {
+  font-size: 20px;
+}
 
 .title {
   font-size: 30px;
@@ -107,6 +110,7 @@ body {
   }
 
   #propo {
+    margin-top: 50px;
     width: 50vw;
     text-align: justify;
     align-self: end;
