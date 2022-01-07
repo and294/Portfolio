@@ -42,12 +42,10 @@ body {
   font-weight: bold;
 }
 
-.current {
-  color: red!important;
-}
-
-.main {
- 
+.active{
+	color: white;
+	background-color: rgba(100,100,100,1);
+	border-left: thick solid rgba(0,255,0,0.5);
 }
 
 .name {
