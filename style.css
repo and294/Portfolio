@@ -16,7 +16,7 @@ body {
   font-family: sans-serif;
 }
 
-.nav {
+/*.nav {
   background-color: rgba(240, 248, 255, 0.5);
   overflow: hidden;
   position: fixed;
@@ -38,7 +38,36 @@ body {
   color: black;
   opacity: 1;
   font-weight: bold;
+}*/
+
+.nav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(240, 248, 255, 0.5);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
+
+/* The navigation menu links */
+.nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.nav a:hover {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+}
+
 
 .main {
   margin-top: 45px;
