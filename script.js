@@ -1,9 +1,29 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("sideNav").style.width = "250px";
+function navHighlight() {
+    var scrollTop = $(document).scrollTop();
+
+    $("section").each(function () {
+        var xPos = $(this).position();
+        var sectionPos = xPos.top;
+        var sectionHeight = $(this).height();
+        var overall = scrollTop + sectionHeight;
+
+        if ((scrollTop + 20) >= sectionPos && scrollTop < overall) {
+            $(this).addClass("SectionActive");
+            $(this).prevAll().removeClass("SectionActive");
+        }
+
+        else if (scrollTop <= overall) {
+            $(this).removeClass("SectionActive");
+        }
+
+        var xIndex = $(".SectionActive").index();
+        var accIndex = xIndex + 1;
+
+        $("nav li:nth-child(" + accIndex + ")").addClass("navActivePage").siblings().removeClass("navActivePage");
+    });
 }
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("sideNav").style.width = "20px";
-}
+
+$(document).scroll(function () {
+    navHighlight();
+});

@@ -42,6 +42,9 @@ body {
   font-weight: bold;
 }
 
+.navActivePage {
+    color: #fdc166;
+}
 
 .main {
  
@@ -89,8 +92,7 @@ body {
     margin-top: -30px;
   }
   
- 
-  
+
   .presentation {
     padding-top: 100px;
   }
