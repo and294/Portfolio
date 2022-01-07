@@ -42,8 +42,8 @@ body {
   font-weight: bold;
 }
 
-.navActivePage {
-    color: #fdc166;
+.current {
+  color: red!important;
 }
 
 .main {
