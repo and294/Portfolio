@@ -130,6 +130,18 @@ body {
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+  height: 100%; 
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(240, 248, 255, 0.5);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+  
   .hello{
     width: 80vw;
     text-align: center;
@@ -166,48 +178,23 @@ body {
 }
 /*Phone*/
 @media screen and (max-width: 767px) {
+  .nav {
+  height: 100%; 
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(240, 248, 255, 0.5);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+  
   .hello{
     width: 80vw;
     text-align: center;
     align-self: center;
   }
-  
-  .nav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.nav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.nav a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.nav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
   
   .name {
     width: 80vw;
@@ -239,23 +226,8 @@ body {
 
 
 .hello {
-  /*position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 50%;*/
-  /*background-image: radial-gradient(
-    ellipse 50% 35% at 50% 50%,
-    #6b1839,
-    transparent
-  );*/
-  /*transform: translate(-50%, -50%);*/
   letter-spacing: 2;
-  /*left: 50%;
-  top: 50%;*/
-  /*text-transform: uppercase;*/
-  font-size: 40px;;
+  font-size: 40px;
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
     -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
