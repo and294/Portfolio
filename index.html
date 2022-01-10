@@ -13,21 +13,23 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
-  
-  
+
   <body>
-    
     <nav id="sideNav" class="nav">
-      <a href="#contact">Contact</a>
-      <a href="#projects">Projets</a>
-      <a href="#skills">Skills</a>
-      <a href="#propo">A propos</a>   
+      <a class="presentation" href="#propo">About</a>
+      <a class="competence" href="#skills">Skills</a>
+      <a class="realisation" href="#projects">Projets</a>
+      <a class="inTouch" href="#contact">Contact</a>
     </nav>
-    
+
     <div class="main">
-      <section class="presentation">
-        <h1 class="hello"><span class="fast-flicker">H</span>el<span class="flicker">l</span>o</h1>
-        <h1 class="name">I'm Andrea<br /><span class="front">Front end developer</span></h1>
+      <section id="presentation">
+        <h1 class="hello">
+          <span class="fast-flicker">H</span>el<span class="flicker">l</span>o
+        </h1>
+        <h1 class="name">
+          I'm Andrea<br /><span class="front">Front end developer</span>
+        </h1>
         <p class="photo">Photo</p>
         <p class="title" id="propo">Who am I ?</p>
         <p class="text" id="cvPres">
@@ -45,7 +47,7 @@
         </p>
       </section>
 
-      <section class="competence">
+      <section id="competence">
         <p class="title" id="skills">Skills</p>
         <div>
           <ul class="text">
@@ -59,12 +61,12 @@
         </div>
       </section>
 
-      <section class="realisation">
+      <section id="realisation">
         <p class="title" id="projects">Projects</p>
         <div class="projects tiles"></div>
       </section>
 
-      <section class="inTouch">
+      <section id="inTouch">
         <p class="title" id="contact">Contact</p>
       </section>
     </div>

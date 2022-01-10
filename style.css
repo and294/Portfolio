@@ -62,7 +62,7 @@ nav a.active {
   font-size: 20px;
 }
 
-.presentation {
+#presentation {
   background-color: #f0f8ff;
   height: 100vh;
   padding-top: 50px;
@@ -70,12 +70,12 @@ nav a.active {
   flex-direction: column;
 }
 
-.competence {
+#competence {
   height: 100vh;
   background-color: #f0f8ff;
 }
 
-.realisation {
+#realisation {
   height: 100vh;
   background-color: #f0f8ff;
 }
