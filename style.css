@@ -57,13 +57,46 @@ nav a.active {
 
 .step1 {
   vertical-align:  60%;
+	-webkit-animation: slide-in-top 1s ease-out 1s ;
+	        animation: slide-in-top 1s ease-out 1s ;
 }
 .step2 {
+	-webkit-animation: slide-in-top 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) 1.5s ;
+	        animation: slide-in-top 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) 1.5s ;
 
 }
 .step3 {
   vertical-align:  -60%;
+	-webkit-animation: slide-in-top 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) 2s ;
+	        animation: slide-in-top 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) 2s ;
 }
+
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 .title {
   font-size: 30px;
