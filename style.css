@@ -51,8 +51,18 @@ nav a.active {
 .name {
   font-size: 40px;
 }
-.front {
+.frontend {
   font-size: 20px;
+}
+
+.step1 {
+  vertical-align:  60%;
+}
+.step2 {
+
+}
+.step3 {
+  vertical-align:  -60%;
 }
 
 .title {
