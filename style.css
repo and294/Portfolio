@@ -21,9 +21,9 @@ nav {
   width: 130px;
   position: fixed;
   z-index: 1;
-  top: 20px;
+  top: 50px;
   left: 0px;
-  background: #eee;
+  background: #5D6E7CEF;
   overflow-x: hidden;
   padding: 8px 0;
   border-top-right-radius: 20px 20px; 
@@ -34,7 +34,7 @@ nav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #2196F3;
+  color: #F8F8F8;
   display: block;
   
 }
@@ -46,7 +46,11 @@ nav a:hover {
 }
 
 nav a.active {
-  color: red
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 1s forwards, flicker 3s
 }
 
 
@@ -181,7 +185,7 @@ nav a.active {
   z-index: 1;
   top: 20px;
   left: 0px;
-  background: #8BC34A;
+  background: #5D6E7CEF;
   overflow-x: hidden;
   padding: 8px 0;
   border-top-right-radius: 20px 20px; 
@@ -192,7 +196,7 @@ nav a.active {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #2196F3;
+  color: #FFFFFF;
   display: block;
   
 }
@@ -239,7 +243,7 @@ nav a.active {
   z-index: 1;
   top: 50px;
   left: 0px;
-  background: #8BC34A;
+  background: #5D6E7CEF;
   overflow-x: hidden;
   padding: 8px 0;
   border-top-right-radius: 20px 20px; 
@@ -250,7 +254,7 @@ nav a.active {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #2196F3;
+  color: #FFFFFF;
   display: block;
   
 }
