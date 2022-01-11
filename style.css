@@ -22,10 +22,12 @@ nav {
   position: fixed;
   z-index: 1;
   top: 20px;
-  left: 10px;
+  left: 0px;
   background: #eee;
   overflow-x: hidden;
   padding: 8px 0;
+  border-top-right-radius: 20px 20px; 
+  border-bottom-right-radius: 20px 20px;
 }
 
 nav a {
@@ -174,15 +176,25 @@ nav a.active {
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .nav {
-  height: 100%; 
-  width: 60px;
+  width: 130px;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  /*background-color: rgba(240, 248, 255, 0.5);*/
+  top: 20px;
+  left: 0px;
+  background: #8BC34A;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding: 8px 0;
+  border-top-right-radius: 20px 20px; 
+  border-bottom-right-radius: 20px 20px;
+}
+  
+  nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2196F3;
+  display: block;
+  
 }
   
   .hello{
@@ -222,15 +234,25 @@ nav a.active {
 /*Phone*/
 @media screen and (max-width: 767px) {
   .nav {
-  height: 100%; 
-  width: 60px;
+  width: 100px;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  /*background-color: rgba(240, 248, 255, 0.5);*/
+  top: 50px;
+  left: 0px;
+  background: #8BC34A;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding: 8px 0;
+  border-top-right-radius: 20px 20px; 
+  border-bottom-right-radius: 20px 20px;
+}
+  
+  nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2196F3;
+  display: block;
+  
 }
   
   .hello{
