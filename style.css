@@ -52,6 +52,10 @@ nav a.active {
   animation: shine 1s forwards, flicker 3s;
 }
 
+.fa-bars {
+  color: white;
+}
+
 .name {
   font-size: 40px;
 }
@@ -180,24 +184,50 @@ nav a.active {
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .nav {
-    width: 130px;
+    width: 50px;
     position: fixed;
     z-index: 1;
-    top: 20px;
+    top: 50px;
     left: 0px;
     background: #5d6e7cef;
     overflow-x: hidden;
     padding: 8px 0;
     border-top-right-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
-  nav a {
+  .nav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
     display: block;
+    transition: all 0.2s ease-in-out;
+    display: none
+  }
+  
+  .nav:hover {
+    width: 100px;
+     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav:hover a {
+    display: initial
+  }
+  
+  .nav:hover p {
+    display: none;
+    color: white;
   }
 
   .hello {
@@ -247,6 +277,11 @@ nav a.active {
     border-top-right-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
     text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .nav a {
@@ -261,7 +296,11 @@ nav a.active {
   
   .nav:hover {
     width: 100px;
-    transition: all 0.2s ease-in-out;  
+     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .nav:hover a {
@@ -269,7 +308,8 @@ nav a.active {
   }
   
   .nav:hover p {
-    display: none
+    display: none;
+    color: white;
   }
 
   .hello {
