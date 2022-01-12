@@ -130,6 +130,9 @@ nav a.active {
   nav a {
     line-height: 32px;
   }
+  nav p {
+    display: none
+  }
 
   .hello {
     text-align: center;
@@ -243,6 +246,7 @@ nav a.active {
     padding: 8px 0;
     border-top-right-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
+    text-align: center;
   }
 
   .nav a {
@@ -252,27 +256,20 @@ nav a.active {
     color: #ffffff;
     display: block;
     transition: all 0.2s ease-in-out;
+    display: none
   }
   
   .nav:hover {
     width: 100px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;  
   }
 
-  .nav a i {
-    display: block;
-    margin-left: 0px;
+  .nav:hover a {
+    display: initial
   }
-
-  .nav a b {
-    display: none;
-  }
-
-  .nav a:hover i {
-    display: none;
-  }
-  .nav a:hover b {
-    display: block;
+  
+  .nav:hover p {
+    display: none
   }
 
   .hello {
