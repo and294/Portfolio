@@ -256,8 +256,20 @@ nav a.active {
   
   .nav:hover {
     width: 100px;
-    
   }
+  
+  .nav a i{
+    display: block;
+}
+.nav a:hover i{
+    display: none;
+}
+.nav a b{
+    display: none;
+}
+.nav a:hover b{
+    display: block;
+}
 
   .hello {
     width: 80vw;
