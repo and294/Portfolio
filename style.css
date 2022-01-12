@@ -28,7 +28,6 @@ nav {
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
 }
-
 nav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -252,24 +251,29 @@ nav a.active {
     font-size: 20px;
     color: #ffffff;
     display: block;
+    transition: all 0.2s ease-in-out;
   }
   
   .nav:hover {
     width: 100px;
+    transition: all 0.2s ease-in-out;
   }
-  
-  .nav a i{
+
+  .nav a i {
     display: block;
-}
-.nav a:hover i{
+    font-size: 10px;
+  }
+
+  .nav a b {
     display: none;
-}
-.nav a b{
+  }
+
+  .nav a:hover i {
     display: none;
-}
-.nav a:hover b{
+  }
+  .nav a:hover b {
     display: block;
-}
+  }
 
   .hello {
     width: 80vw;
