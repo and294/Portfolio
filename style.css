@@ -65,8 +65,8 @@ nav a.active {
 
 .step1 {
   vertical-align: 60%;
-  -webkit-animation: slide-in-top 1s ease-out 1s;
-  animation: slide-in-top 1s ease-out 1s;
+  -webkit-animation: slideInFromLeft 1s ease-out 1s;
+  animation: slideInFromLeft 1s ease-out 1s;
 }
 .step2 {
   -webkit-animation: slide-in-top 1s cubic-bezier(0.645, 0.045, 0.355, 1) 1.5s;
@@ -78,15 +78,15 @@ nav a.active {
   animation: slide-in-top 1s cubic-bezier(0.645, 0.045, 0.355, 1) 2s;
 }
 
-@-webkit-keyframes slide-in-top {
+/*@-webkit-keyframes slide-in-top {
   0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -100,6 +100,15 @@ nav a.active {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}*/
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
