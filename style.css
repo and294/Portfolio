@@ -125,13 +125,17 @@ nav a.active {
 
 .backdrop {
   content: ' ';
-  background: rgba(57,93,119,1);
-  width: 200px;
-  height: 200px;
+background: rgb(57,93,119);
+background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, rgba(0,1,1,1) 100%);
+  width: 45vw;
+  height: 400px;
   z-index: 0;
   position: absolute;
   right: 0px;
-  top
+  top: 350px;
+  z-index: 0;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;  
 
 }
 
@@ -188,6 +192,7 @@ nav a.active {
     text-align: justify;
     align-self: end;
     margin-right: 70px;
+    z-index: 1;
   }
 
   #cvPres {
@@ -195,6 +200,7 @@ nav a.active {
     text-align: justify;
     align-self: end;
     margin-right: 70px;
+    z-index: 1;
   }
 }
 /*Tablet*/
@@ -272,12 +278,14 @@ nav a.active {
     width: 80vw;
     text-align: center;
     align-self: center;
+    z-index: 1;
   }
 
   #cvPres {
     width: 80vw;
     text-align: justify;
     align-self: center;
+    z-index: 1;
   }
 }
 /*Phone*/
@@ -355,12 +363,14 @@ nav a.active {
     width: 80vw;
     text-align: center;
     align-self: center;
+    z-index: 1;
   }
 
   #cvPres {
     width: 80vw;
     text-align: justify;
     align-self: center;
+    z-index: 1;
   }
 }
 
