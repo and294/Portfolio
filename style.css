@@ -121,7 +121,18 @@ nav a.active {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  
+}
+
+.backdrop {
+  content: ' ';
+  background: rgba(57,93,119,1);
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+  position: absolute;
+  right: 0px;
+  top
+
 }
 
 #competence {
