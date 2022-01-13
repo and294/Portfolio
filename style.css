@@ -13,7 +13,7 @@ html {
 /* adjust typography defaults */
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -78,7 +78,7 @@ nav a.active {
   animation: slide-in-top 1s cubic-bezier(0.645, 0.045, 0.355, 1) 2s;
 }
 
-/*@-webkit-keyframes slide-in-top {
+@-webkit-keyframes slide-in-top {
   0% {
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
@@ -101,16 +101,8 @@ nav a.active {
     transform: translateY(0);
     opacity: 1;
   }
-}*/
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
+
 
 .title {
   font-size: 30px;
