@@ -22,7 +22,8 @@ nav {
   z-index: 1;
   top: 50px;
   left: 0px;
-  background: #5d6e7cef;
+  background: rgb(0,1,1);
+  background: linear-gradient(90deg, rgba(0,1,1,1) 0%, rgba(57,93,119,1) 100%);
   overflow-x: hidden;
   padding: 8px 0;
   border-top-right-radius: 20px 20px;
@@ -61,6 +62,7 @@ nav a.active {
 }
 .frontend {
   font-size: 20px;
+  color: rgba(57,93,119,1);
 }
 
 .step1 {
@@ -113,11 +115,13 @@ nav a.active {
 }
 
 #presentation {
-  background-color: #f0f8ff;
+  background-color: #0D1114;
+  color: white;
   height: 100vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+  
 }
 
 #competence {
@@ -190,7 +194,8 @@ nav a.active {
     z-index: 1;
     top: 50px;
     left: 0px;
-    background: #5d6e7cef;
+    background: rgb(0,1,1);
+  background: linear-gradient(90deg, rgba(0,1,1,1) 0%, rgba(57,93,119,1) 100%);
     overflow-x: hidden;
     padding: 8px 0;
     border-top-right-radius: 20px 20px;
@@ -272,7 +277,8 @@ nav a.active {
     z-index: 1;
     top: 50px;
     left: 0px;
-    background: #5d6e7cef;
+    background: rgb(0,1,1);
+  background: linear-gradient(90deg, rgba(0,1,1,1) 0%, rgba(57,93,119,1) 100%);
     overflow-x: hidden;
     padding: 8px 0;
     border-top-right-radius: 20px 20px;
