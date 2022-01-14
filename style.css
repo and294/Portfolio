@@ -16,6 +16,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.mobile-nav-toggle{
+  position: absolute;
+  background: red;
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
 nav {
   width: 130px;
   position: fixed;
@@ -177,7 +184,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 
   .photo {
     width: 200px;
-    height: 200px;
+    aspect-ratio: 1;
     border: solid black;
     border-radius: 100%;
     text-align: center;
@@ -267,7 +274,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 
   .photo {
     width: 150px;
-    height: 150px;
+aspect-ratio: 1;
     border: solid black;
     border-radius: 100%;
     text-align: center;
@@ -352,7 +359,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 
   .photo {
     width: 200px;
-    height: 200px;
+   aspect-ratio: 1;
     border: solid black;
     border-radius: 100%;
     text-align: center;
