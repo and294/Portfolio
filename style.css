@@ -16,17 +16,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.mobile-nav-toggle{
-  position: absolute;
-  background: red;
-  width: 1rem;
-  aspect-ratio: 1;
+ .mobile-nav-toggle{
+  display: none;
 }
 
 nav {
   width: 130px;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 50px;
   left: 0px;
   background: rgb(0,1,1);
@@ -59,10 +56,10 @@ nav a.active {
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   animation: shine 1s forwards, flicker 3s;
 }
-
+/*
 .fa-bars {
   color: white;
-}
+}*/
 
 .name {
   font-size: 40px;
@@ -158,6 +155,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
+  
   nav a {
     line-height: 32px;
   }
@@ -212,7 +210,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .nav {
+  /*.nav {
     width: 50px;
     position: fixed;
     z-index: 1;
@@ -258,7 +256,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
   .nav:hover p {
     display: none;
     color: white;
-  }
+  }*/
 
   .hello {
     width: 80vw;
@@ -297,7 +295,20 @@ aspect-ratio: 1;
 }
 /*Phone*/
 @media screen and (max-width: 767px) {
-  .nav {
+  
+  .mobile-nav-toggle{
+  display: block;
+  position: absolute;
+    top: 1rem;
+    left
+  width: 1rem;
+  aspect-ratio: 1;
+  z-index: 9999;
+}
+  
+  
+  
+  /*.nav {
     width: 50px;
     position: fixed;
     z-index: 1;
@@ -343,7 +354,7 @@ aspect-ratio: 1;
   .nav:hover p {
     display: none;
     color: white;
-  }
+  }*/
 
   .hello {
     width: 80vw;
