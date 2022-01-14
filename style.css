@@ -299,12 +299,16 @@ aspect-ratio: 1;
   .mobile-nav-toggle{
   display: block;
   position: absolute;
-    top: 1rem;
-    left
+    top: 2rem;
+    left: 2rem;
   width: 1rem;
   aspect-ratio: 1;
   z-index: 9999;
 }
+  
+  .nav {
+    transform: translateX(-100%);
+  }
   
   
   

@@ -1,3 +1,5 @@
+
+/*Highlight section when scrolled by*/
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav a");
 
@@ -19,3 +21,10 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const primaryNav = document.querySelector('.nav');
+const navToggle = document.querySelector('.mobile-nav-toggle');
+
+navToggle.addEventListener('click', () => {
+  
+})
