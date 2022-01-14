@@ -121,7 +121,6 @@ nav a.active {
 #presentation {
   background-color: #0D1114;
   color: white;
-  height: 100vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -170,8 +169,9 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
     margin-top: -30px;
   }
 
-  .presentation {
+  #presentation {
     padding-top: 100px;
+    height: 100vh;
   }
 
   .name {
@@ -210,53 +210,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /*.nav {
-    width: 50px;
-    position: fixed;
-    z-index: 1;
-    top: 50px;
-    left: 0px;
-    background: rgb(0,1,1);
-  background: linear-gradient(90deg, rgba(0,1,1,1) 0%, rgba(57,93,119,1) 100%);
-    overflow-x: hidden;
-    padding: 8px 0;
-    border-top-right-radius: 20px 20px;
-    border-bottom-right-radius: 20px 20px;
-    text-align: center;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
 
-  .nav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #ffffff;
-    display: block;
-    transition: all 0.2s ease-in-out;
-    display: none
-  }
-  
-  .nav:hover {
-    width: 100px;
-     -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .nav:hover a {
-    display: initial
-  }
-  
-  .nav:hover p {
-    display: none;
-    color: white;
-  }*/
 
   .hello {
     width: 80vw;
@@ -296,14 +250,20 @@ aspect-ratio: 1;
 /*Phone*/
 @media screen and (max-width: 767px) {
   
+  .fa-bars {
+    color: white;
+  }
+  
   .mobile-nav-toggle{
   display: block;
   position: fixed;
-    top: 2rem;
+    top: 3.5rem;
     left: 1rem;
   width: 2rem;
   aspect-ratio: 1;
   z-index: 9999;
+    background: none;
+    border: none;
 }
   
   .nav {
