@@ -13,10 +13,10 @@ html {
 /* adjust typography defaults */
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
- .mobile-nav-toggle{
+.mobile-nav-toggle {
   display: none;
 }
 
@@ -26,8 +26,12 @@ nav {
   z-index: 1000;
   top: 50px;
   left: 0px;
-  background: rgb(0,1,1);
-  background: linear-gradient(90deg, rgba(0,1,1,1) 0%, rgba(57,93,119,1) 100%);
+  background: rgb(0, 1, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 1, 1, 1) 0%,
+    rgba(57, 93, 119, 1) 100%
+  );
   overflow-x: hidden;
   padding: 8px 0;
   border-top-right-radius: 20px 20px;
@@ -66,7 +70,7 @@ nav a.active {
 }
 .frontend {
   font-size: 20px;
-  color: rgba(57,93,119,1);
+  color: rgba(57, 93, 119, 1);
 }
 
 .step1 {
@@ -109,7 +113,6 @@ nav a.active {
   }
 }
 
-
 .title {
   font-size: 30px;
 }
@@ -119,7 +122,7 @@ nav a.active {
 }
 
 #presentation {
-  background-color: #0D1114;
+  background-color: #0d1114;
   color: white;
   padding-top: 50px;
   display: flex;
@@ -127,9 +130,14 @@ nav a.active {
 }
 
 .backdrop {
-  content: ' ';
-background: rgb(57,93,119);
-background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, rgba(0,1,1,1) 100%);
+  content: " ";
+  background: rgb(57, 93, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 93, 119, 1) 0%,
+    rgba(32, 53, 68, 1) 87%,
+    rgba(0, 1, 1, 1) 100%
+  );
   width: 45vw;
   height: 400px;
   z-index: 0;
@@ -138,8 +146,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
   top: 350px;
   z-index: 0;
   border-top-left-radius: 10px 10px;
-  border-bottom-left-radius: 10px 10px;  
-
+  border-bottom-left-radius: 10px 10px;
 }
 
 #competence {
@@ -154,12 +161,11 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
-  
   nav a {
     line-height: 32px;
   }
   nav p {
-    display: none
+    display: none;
   }
 
   .hello {
@@ -210,7 +216,36 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fa-bars {
+    color: white;
+  }
 
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    top: 3.5rem;
+    left: 1rem;
+    width: 2rem;
+    aspect-ratio: 1;
+    z-index: 9999;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav {
+    padding-top: 3rem;
+    transform: translateX(-100%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
 
   .hello {
     width: 80vw;
@@ -226,7 +261,7 @@ background: linear-gradient(90deg, rgba(57,93,119,1) 0%, rgba(32,53,68,1) 87%, r
 
   .photo {
     width: 150px;
-aspect-ratio: 1;
+    aspect-ratio: 1;
     border: solid black;
     border-radius: 100%;
     text-align: center;
@@ -249,23 +284,23 @@ aspect-ratio: 1;
 }
 /*Phone*/
 @media screen and (max-width: 767px) {
-  
   .fa-bars {
     color: white;
   }
-  
-  .mobile-nav-toggle{
-  display: block;
-  position: fixed;
+
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
     top: 3.5rem;
     left: 1rem;
-  width: 2rem;
-  aspect-ratio: 1;
-  z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    z-index: 9999;
     background: none;
     border: none;
-}
-  
+    cursor: pointer;
+  }
+
   .nav {
     padding-top: 3rem;
     transform: translateX(-100%);
@@ -274,12 +309,15 @@ aspect-ratio: 1;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-  
-    
   }
-  
-  .nav[data-visible='true'] {
+
+  .nav[data-visible="true"] {
     transform: translateX(0%);
+  }
+
+  .backdrop {
+    top: 45rem;
+    height: 24rem;
   }
 
   .hello {
@@ -296,7 +334,7 @@ aspect-ratio: 1;
 
   .photo {
     width: 200px;
-   aspect-ratio: 1;
+    aspect-ratio: 1;
     border: solid black;
     border-radius: 100%;
     text-align: center;
