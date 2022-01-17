@@ -29,7 +29,7 @@ nav {
   background: rgb(0, 1, 1);
   background: linear-gradient(
     90deg,
-    rgba(0, 1, 1, 1) 0%,
+    rgba(13, 17, 20, 1) 0%,
     rgba(57, 93, 119, 1) 100%
   );
   overflow-x: hidden;
@@ -137,30 +137,10 @@ nav a.active {
 #presentation {
   background-color: #0d1114;
   color: white;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   display: flex;
   flex-direction: column;
 }
-
-/*.backdrop {
-  content: " ";
-  background: rgb(57, 93, 119);
-  background: linear-gradient(
-    90deg,
-    rgba(57, 93, 119, 1) 0%,
-    rgba(32, 53, 68, 1) 87%,
-    rgba(0, 1, 1, 1) 100%
-  );
-  width: 45vw;
-  height: 400px;
-  z-index: 0;
-  position: absolute;
-  right: 0px;
-  top: 350px;
-  z-index: 0;
-  border-top-left-radius: 10px 10px;
-  border-bottom-left-radius: 10px 10px;
-}*/
 
 #competence {
   height: 100vh;
@@ -303,6 +283,16 @@ nav a.active {
     text-align: justify;
     align-self: center;
     z-index: 1;
+    background: rgb(57, 93, 119);
+    background: linear-gradient(
+      90deg,
+      rgba(57, 93, 119, 1) 0%,
+      rgba(32, 53, 68, 1) 60%,
+      rgba(13, 17, 20, 1) 100%
+    );
+    padding: 20px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
   }
 }
 /*Phone*/
@@ -381,7 +371,7 @@ nav a.active {
       90deg,
       rgba(57, 93, 119, 1) 0%,
       rgba(32, 53, 68, 1) 60%,
-      rgba(0, 1, 1, 1) 100%
+      rgba(13, 17, 20, 1) 100%
     );
     padding: 20px;
     border-top-left-radius: 10px 10px;
