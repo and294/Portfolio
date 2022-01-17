@@ -73,20 +73,17 @@ nav a.active {
   color: rgba(57, 93, 119, 1);
 }
 
+
 .step1 {
   vertical-align: 60%;
-  position: absolute;
   -webkit-animation: slide-in-top 0.5s ease-out both;
 	        animation: slide-in-top 0.5s ease-out both;
 }
 .step2 {
-  position: absolute;
   -webkit-animation: slide-in-top 1s ease-out both;
 	        animation: slide-in-top 1s ease-out both;
 }
 .step3 {
-  vertical-align: -60%;
-  position: absolute;
    -webkit-animation: slide-in-top 1.5s ease-out both;
 	        animation: slide-in-top 1.5s ease-out both;
 }
@@ -128,6 +125,15 @@ opacity: 1;
 
 .text {
   font-size: 20px;
+}
+
+.intro {
+  height: 100vh;
+  background-color: #0d1114;
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 #presentation {
