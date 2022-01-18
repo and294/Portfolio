@@ -161,21 +161,25 @@ nav a.active {
     display: none;
   }
 
-  .hello {
+  /*.hello {
     text-align: center;
     position: absolute;
     margin-left: 18.3vw;
     margin-top: -30px;
-  }
+  }*/
 
   #presentation {
     padding-top: 100px;
     height: 100vh;
   }
+  
+  .intro {
+    display: flex;
+  }
 
   .name {
-    width: 80vw;
-    align-self: center;
+    /*width: 80vw;*/
+    /*align-self: center;*/
     text-align: center;
   }
 
