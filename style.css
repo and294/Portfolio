@@ -18,6 +18,7 @@ body {
 
 .main {
   overflow: scroll;
+  scroll-snap-type: y;
 }
 
 /*Set default font size for titles and text*/
@@ -84,6 +85,7 @@ nav a.active {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: center;
 }
 
 /*I'm Andrea*/
@@ -151,11 +153,13 @@ nav a.active {
 
 /*Who am I ? presentation*/
 #presentation {
+  height: 100vh;
   background-color: #0d1114;
   color: white;
   /*padding-top: 50px;*/
   display: flex;
   flex-direction: column;
+  scroll-snap-align: center;
 }
 
 /*who am I*/
@@ -207,18 +211,21 @@ nav a.active {
 #competence {
   height: 100vh;
   background-color: #f0f8ff;
+  scroll-snap-align: center;
 }
 
 /*projects*/
 #realisation {
   height: 100vh;
   background-color: #f0f8ff;
+  scroll-snap-align: center;
 }
 
 /*contacts*/
 #inTouch {
   height: 100vh;
   background-color: #f0f8ff;
+  scroll-snap-align: center;
 }
 
 /*Desktop*/
