@@ -17,8 +17,14 @@ body {
 }
 
 .main {
-  overflow: scroll;
-  scroll-snap-type: y;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  position: relative;
 }
 
 /*Set default font size for titles and text*/
@@ -103,7 +109,7 @@ nav a.active {
   width: 200%;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -10;
   transform: translateY(-50%);
   transform: rotate(-15deg);
   z-index: 1;
@@ -270,7 +276,7 @@ nav a.active {
   .photo {
     width: 300px;
     aspect-ratio: 1;
-    z-index: 0;
+    z-index: 10;
     background: white;
     color: black;
     border: solid black;
