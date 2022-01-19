@@ -93,11 +93,12 @@ nav a.active {
 
 /*Wavy lines*/
 .wave-line {
-  width: 100%;
+  width: 200%;
   position: absolute;
-  top: 43%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
+  transform: rotate(-15deg);
   z-index: 1;
 }
 
@@ -108,16 +109,18 @@ nav a.active {
 }
 
 .wave-line .line1 {
-  background: url("https://toppng.com/transparent-png-wavy-lines-PNG-free-PNG-Images_190277");
+  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave1.png?v=1642588469117) repeat-x;
+  background-size: contain;
   animation: lineOne 30s linear infinite;
 }
 
 
-/*.wave-line .line2 {
-  background: red;
+.wave-line .line2 {
+  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave2.png?v=1642588615504) repeat-x;
+  background-size: contain;
   animation: lineTwo 30s linear infinite;
 }
-
+/*
 .wave-line .line3 {
   background: yellow;
   animation: lineThree 30s linear infinite;
@@ -129,12 +132,12 @@ nav a.active {
   }
 }
 
-/*@keyframes lineTwo {
+@keyframes lineTwo {
   50%{
     background-position: -100% 0;
   }
 }
-
+/*
 @keyframes lineThree {
   50%{
     background-position: 150% 0;
