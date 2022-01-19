@@ -15,6 +15,11 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+.main {
+  overflow: scroll;
+}
+
 /*Set default font size for titles and text*/
 .title {
   font-size: 30px;
