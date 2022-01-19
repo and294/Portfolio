@@ -108,11 +108,12 @@ nav a.active {
 }
 
 .wave-line .line1 {
-  background: blue;
+  background: url("https://toppng.com/transparent-png-wavy-lines-PNG-free-PNG-Images_190277");
   animation: lineOne 30s linear infinite;
 }
 
-.wave-line .line2 {
+
+/*.wave-line .line2 {
   background: red;
   animation: lineTwo 30s linear infinite;
 }
@@ -120,7 +121,7 @@ nav a.active {
 .wave-line .line3 {
   background: yellow;
   animation: lineThree 30s linear infinite;
-}
+}*/
 
 @keyframes lineOne {
   50%{
@@ -128,7 +129,7 @@ nav a.active {
   }
 }
 
-@keyframes lineTwo {
+/*@keyframes lineTwo {
   50%{
     background-position: -100% 0;
   }
@@ -138,7 +139,7 @@ nav a.active {
   50%{
     background-position: 150% 0;
   }
-}
+}*/
 
 /*Who am I ? presentation*/
 #presentation {
