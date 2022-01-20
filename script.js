@@ -42,8 +42,10 @@ const img = document.querySelector(".bio")
 
 const observer = new IntersectionObserver((entries) => {
   
-  if(entries.intersectionRatio > 0) {
-    entries.target.addClass('actived');
+  if(entries[0].intersectionRatio > 0.5) {
+    entries[0].target.addClass('actived');
+  } else {
+    entries[0].target.removeClass('actived');
   }
 })
 
