@@ -124,14 +124,14 @@ nav a.active {
 .wave-line .line1 {
   background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave1.png?v=1642588469117) repeat-x;
   background-size: contain;
-  animation: lineOne 30s linear infinite;
+  animation: lineOne 50s linear infinite;
 }
 
 
 .wave-line .line2 {
   background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave2.png?v=1642588615504) repeat-x;
   background-size: contain;
-  animation: lineTwo 30s linear infinite;
+  animation: lineTwo 50s linear infinite;
 }
 /*
 .wave-line .line3 {
@@ -305,8 +305,10 @@ flex-direction: column;
     z-index: 1;
   }
 
-  #cvPres {
+  .bio {
     width: 50vw;
+    transform: translateX(40%);
+    opacity: 0;
     text-align: justify;
     align-self: end;
     margin-right: 70px;
@@ -321,6 +323,11 @@ flex-direction: column;
     padding: 20px;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
+  }
+  .actived {
+    transform: translateX(0%);
+    transition: 1s ease-out;
+    opacity: 1;
   }
 }
 
@@ -398,7 +405,8 @@ flex-direction: column;
 
   .bio {
     width: 80vw;
-    transform: translateX(100%);
+    transform: translateX(40%);
+    opacity: 0;
     text-align: justify;
     align-self: center;
     z-index: 1;
@@ -412,10 +420,12 @@ flex-direction: column;
     padding: 20px;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
+    transition: 1s ease-out;
   }
   .actived {
-    transform: translateX(-100%);
-    transition: 1s ease-out
+    transform: translateX(0%);
+    transition: 1s ease-out;
+    opacity: 1;
   }
   
 }

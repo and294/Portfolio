@@ -38,8 +38,6 @@ navToggle.addEventListener('click', () => {
 
 /*pres text roll in on scroll*/
 
-const text = document.querySelector(".bio")
-
 const config = {
     root: null, // Sets the framing element to the viewport
     rootMargin: "0px",
