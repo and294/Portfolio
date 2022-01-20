@@ -39,4 +39,24 @@ navToggle.addEventListener('click', () => {
 /*pres text roll in on scroll*/
 const text = document.querySelector('#cvPres');
 
-window.addEventListener('DOM')
+window.addEventListener('DOMContentLoeded', setup);
+
+function setup() {
+  const options = {
+    rootMargin: '0px 0px 200px 0px'
+  }
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      } else {
+        return;
+      }
+    })
+  }, options);
+  
+ const text = document.querySelector('#cvPres');
+  observer.observe(text)
+}
