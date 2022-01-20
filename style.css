@@ -396,9 +396,9 @@ flex-direction: column;
     z-index: 1;
   }
 
-  #cvPres {
+  .bio {
     width: 80vw;
-    transform: translateX(10%);
+    transform: translateX(100%);
     text-align: justify;
     align-self: center;
     z-index: 1;
@@ -414,7 +414,7 @@ flex-direction: column;
     border-bottom-left-radius: 10px 10px;
   }
   .actived {
-    transform: translateX(-10%);
+    transform: translateX(-100%);
     transition: 1s ease-out
   }
   

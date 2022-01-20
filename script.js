@@ -38,15 +38,22 @@ navToggle.addEventListener('click', () => {
 
 /*pres text roll in on scroll*/
 
-const img = document.querySelector(".bio")
+const text = document.querySelector(".bio")
 
-const observer = new IntersectionObserver((entries) => {
-  
-  if(entries[0].intersectionRatio > 0.5) {
-    entries[0].target.addClass('actived');
-  } else {
-    entries[0].target.removeClass('actived');
-  }
-})
+const config = {
+    root: null, // Sets the framing element to the viewport
+    rootMargin: "0px",
+    threshold: 0.5
+  },
+  box = document.querySelector(".bio"),
+  observer = new IntersectionObserver((entries) => entries
+    .forEach(({target: {classList}, intersectionRatio}) => {
+      if(intersectionRatio > 0.5){
+        classList.add("actived");
+      }
+      else{
+        classList.remove("actived");
+      }
+    }), config);
 
-observer.observe(img)
+observer.observe(box);
