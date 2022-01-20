@@ -39,8 +39,3 @@ navToggle.addEventListener('click', () => {
 /*pres text roll in on scroll*/
 const text = document.querySelector('#cvPres');
 
-const appearOptions = {};
-
-const appearOnScroll = new IntersectionObserver(function(entry, appearOnScroll) {
-  
-}, appearOptions)

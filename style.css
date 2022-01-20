@@ -398,7 +398,7 @@ flex-direction: column;
 
   #cvPres {
     width: 80vw;
-    margin-right: -900px;
+    transform: translateX(110%);
     text-align: justify;
     align-self: center;
     z-index: 1;
@@ -413,6 +413,11 @@ flex-direction: column;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
+  #cvPres.active {
+    transform: translateX(0%);
+    transition: 1s ease-out
+  }
+  
 }
 
 /*Hello neon animation*/
