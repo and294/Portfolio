@@ -398,6 +398,7 @@ flex-direction: column;
 
   #cvPres {
     width: 80vw;
+    margin-right: -900px;
     text-align: justify;
     align-self: center;
     z-index: 1;

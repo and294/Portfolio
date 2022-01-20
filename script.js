@@ -22,6 +22,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
+/*hide nav on phone and tablet*/
 const primaryNav = document.querySelector('.nav');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
@@ -34,3 +35,11 @@ navToggle.addEventListener('click', () => {
     primaryNav.setAttribute("data-visible", "false")
   }
 })
+
+/*pres text roll in on scroll*/
+const text = document.querySelector('#cvPres');
+
+window.eventListener("scroll", () => {
+  var scroll = text.offsetTop;
+  var amount = -900+(scroll*0.4)
+}) 
