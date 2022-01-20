@@ -413,7 +413,7 @@ flex-direction: column;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  .active {
+  .actived {
     transform: translateX(-10%);
     transition: 1s ease-out
   }

@@ -43,7 +43,7 @@ const img = document.getElementById("cvPres")
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("active")
+      entry.target.classList.add("actived")
     }
   })
 }
