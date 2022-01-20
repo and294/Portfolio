@@ -38,22 +38,16 @@ navToggle.addEventListener('click', () => {
 
 /*pres text roll in on scroll*/
 
-const text = document.getElementById("cvPres")
+const img = document.getElementById("cvPres")
 
-const config = {
-    root: null, // Sets the framing element to the viewport
-    rootMargin: "0px",
-    threshold: 0.5
-  },
-  box = document.getElementById("box"),
-  observer = new IntersectionObserver((entries) => entries
-    .forEach(({target: {classList}, intersectionRatio}) => {
-      if(intersectionRatio > 0.5){
-        classList.add("active");
-      }
-      else{
-        classList.remove("active");
-      }
-    }), config);
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active")
+    }
+  })
+}
+const options = {}
 
-observer.observe();
+const myObserver = new IntersectionObserver(callback, options)
+myObserver.observe(img)

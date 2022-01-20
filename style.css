@@ -414,7 +414,7 @@ flex-direction: column;
     border-bottom-left-radius: 10px 10px;
   }
   .active {
-    transform: translateX(10%);
+    transform: translateX(-10%);
     transition: 1s ease-out
   }
   
