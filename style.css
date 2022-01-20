@@ -413,7 +413,7 @@ flex-direction: column;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  #cvPres.active {
+  .active {
     transform: translateX(0%);
     transition: 1s ease-out
   }
