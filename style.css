@@ -398,7 +398,7 @@ flex-direction: column;
 
   #cvPres {
     width: 80vw;
-    transform: translateX(110%);
+    transform: translateX(10%);
     text-align: justify;
     align-self: center;
     z-index: 1;
@@ -414,7 +414,7 @@ flex-direction: column;
     border-bottom-left-radius: 10px 10px;
   }
   .active {
-    transform: translateX(0%);
+    transform: translateX(10%);
     transition: 1s ease-out
   }
   
