@@ -36,15 +36,41 @@ navToggle.addEventListener('click', () => {
   }
 })
 
-/*pres text roll in on scroll*/
+
+
+
+/*Observer animations*/
 
 const config = {
     root: null, // Sets the framing element to the viewport
     rootMargin: "0px",
     threshold: 0.5
   },
-  box = document.querySelector(".bio"),
-  observer = new IntersectionObserver((entries) => entries
+ 
+   /*Who am I*/   
+      
+   steps = document.querySelectorAll(".steps"),
+  observerSteps = new IntersectionObserver((entries) => entries
+    .forEach(({target: {classList}, intersectionRatio}) => {
+      if(intersectionRatio > 0.5){
+        classList.add("stepsIn");
+      }
+      else{
+        classList.remove("stepsIn");
+      }
+    }), config);
+
+observerSteps.observe(steps);   
+      
+      
+ /*Bio roll in*/
+const configBio = {
+    root: null, // Sets the framing element to the viewport
+    rootMargin: "0px",
+    threshold: 0.5
+  },
+  bio = document.querySelector(".bio"),
+  observerBio = new IntersectionObserver((entries) => entries
     .forEach(({target: {classList}, intersectionRatio}) => {
       if(intersectionRatio > 0.5){
         classList.add("actived");
@@ -52,6 +78,6 @@ const config = {
       else{
         classList.remove("actived");
       }
-    }), config);
+    }), configBio);
 
-observer.observe(box);
+observerBio.observe(bio);

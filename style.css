@@ -168,6 +168,15 @@ flex-direction: column;
 }
 
 /*who am I*/
+.steps {
+  transform: translateX(-40%);
+    opacity: 0;
+}
+.stepsIn{
+  transform: translateX(0%);
+    transition: 1s ease-out;
+    opacity: 1;
+}
 .step1 {
   vertical-align: 60%;
   -webkit-animation: slide-in-top 0.5s ease-out both;
@@ -178,11 +187,12 @@ flex-direction: column;
   animation: slide-in-top 1s ease-out both;
 }
 .step3 {
+  vertical-align: -60%;
   -webkit-animation: slide-in-top 1.5s ease-out both;
   animation: slide-in-top 1.5s ease-out both;
 }
 
-.slide-in-top {
+/*.slide-in-top {
   -webkit-animation: slide-in-top 1s ease-out both;
   animation: slide-in-top 1s ease-out both;
 }
@@ -210,7 +220,7 @@ flex-direction: column;
     transform: translateY(0);
     opacity: 1;
   }
-}
+}*/
 
 /*skills*/
 #competence {
