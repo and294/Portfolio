@@ -36,17 +36,17 @@ navToggle.addEventListener("click", () => {
 });
 
 /*Observer animations*/
-
+/*Who am I*/
 const config = {
     root: null, // Sets the framing element to the viewport
-    rootMargin: "50px",
-    threshold: 0.5,
+    rootMargin: "0px",
+    threshold: 0.3,
   },
-  /*Who am I*/
+  
   step1 = document.querySelector(".step1"),
   step2 = document.querySelector(".step2"),
   step3 = document.querySelector(".step3"),
-  observerStep1 = new IntersectionObserver(
+  observerSteps = new IntersectionObserver(
     (entries) =>
       entries.forEach(({ target: { classList }, intersectionRatio }) => {
         if (intersectionRatio > 0.5) {
@@ -58,35 +58,10 @@ const config = {
     config
   );
 
-observerStep1.observe(step1);
+observerSteps.observe(step1);
+observerSteps.observe(step2);
+observerSteps.observe(step3);
 
-observerStep2 = new IntersectionObserver(
-  (entries) =>
-    entries.forEach(({ target: { classList }, intersectionRatio }) => {
-      if (intersectionRatio > 0.5) {
-        classList.add("stepsIn");
-      } else {
-        classList.remove("stepsIn");
-      }
-    }),
-  config
-);
-
-observerStep1.observe(step2);
-
-observerStep3 = new IntersectionObserver(
-  (entries) =>
-    entries.forEach(({ target: { classList }, intersectionRatio }) => {
-      if (intersectionRatio > 0.5) {
-        classList.add("stepsIn");
-      } else {
-        classList.remove("stepsIn");
-      }
-    }),
-  config
-);
-
-observerStep1.observe(step3);
 
 /*Bio roll in*/
 const configBio = {
