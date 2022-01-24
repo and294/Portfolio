@@ -105,11 +105,10 @@ nav a.active {
 
 /*Wavy lines*/
 .wave-line {
-  width: 200%;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: -10;
-  transform: translateY(-50%);
   transform: rotate(-15deg);
   z-index: 1;
 }
@@ -125,7 +124,6 @@ nav a.active {
     repeat-x;
   background-size: contain;
   animation: lineOne 50s linear infinite;
-  width: 100%;
 }
 
 .wave-line .line2 {
