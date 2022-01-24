@@ -83,7 +83,6 @@ nav a.active {
   animation: shine 1s forwards, flicker 3s;
 }
 
-
 /*Hello page*/
 .intro {
   height: 100vh;
@@ -122,14 +121,16 @@ nav a.active {
 }
 
 .wave-line .line1 {
-  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave1.png?v=1642588469117) repeat-x;
+  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave1.png?v=1642588469117)
+    repeat-x;
   background-size: contain;
   animation: lineOne 50s linear infinite;
+  width: 100%;
 }
 
-
 .wave-line .line2 {
-  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave2.png?v=1642588615504) repeat-x;
+  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave2.png?v=1642588615504)
+    repeat-x;
   background-size: contain;
   animation: lineTwo 50s linear infinite;
 }
@@ -140,13 +141,13 @@ nav a.active {
 }*/
 
 @keyframes lineOne {
-  50%{
+  50% {
     background-position: -150% 0;
   }
 }
 
 @keyframes lineTwo {
-  50%{
+  50% {
     background-position: -100% 0;
   }
 }
@@ -164,7 +165,7 @@ nav a.active {
   color: white;
   /*padding-top: 50px;*/
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
 
 /*who am I*/
@@ -176,8 +177,8 @@ flex-direction: column;
 
 .propoactivated {
   transform: translateX(0%);
-    transition: 1s ease-out;
-    opacity: 1;
+  transition: 1s ease-out;
+  opacity: 1;
 }
 .step1 {
   vertical-align: 60%;
@@ -193,36 +194,6 @@ flex-direction: column;
   -webkit-animation: slide-in-top 1.5s ease-out both;
   animation: slide-in-top 1.5s ease-out both;
 }
-
-/*.slide-in-top {
-  -webkit-animation: slide-in-top 1s ease-out both;
-  animation: slide-in-top 1s ease-out both;
-}
-
-@-webkit-keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}*/
 
 /*skills*/
 #competence {
@@ -439,7 +410,6 @@ flex-direction: column;
     transition: 1s ease-out;
     opacity: 1;
   }
-  
 }
 
 /*Hello neon animation*/
