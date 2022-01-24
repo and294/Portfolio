@@ -43,25 +43,20 @@ const config = {
     threshold: 0.3,
   },
   
-  step1 = document.querySelector(".step1"),
-  step2 = document.querySelector(".step2"),
-  step3 = document.querySelector(".step3"),
+  step = document.querySelector(".propo"),
   observerSteps = new IntersectionObserver(
     (entries) =>
       entries.forEach(({ target: { classList }, intersectionRatio }) => {
         if (intersectionRatio > 0.5) {
-          classList.add("stepsIn");
+          classList.add("propoactivated");
         } else {
-          classList.remove("stepsIn");
+          classList.remove("propoactivated");
         }
       }),
     config
   );
 
-observerSteps.observe(step1);
-observerSteps.observe(step2);
-observerSteps.observe(step3);
-
+observerSteps.observe(step);
 
 /*Bio roll in*/
 const configBio = {

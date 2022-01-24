@@ -168,11 +168,13 @@ flex-direction: column;
 }
 
 /*who am I*/
-.steps {
-  transform: translateX(-40%);
-    opacity: 0;
+.propo {
+  text-align: center;
+  transform: translateX(-20%);
+  opacity: 0;
 }
-.stepsIn{
+
+.propoactivated {
   transform: translateX(0%);
     transition: 1s ease-out;
     opacity: 1;
