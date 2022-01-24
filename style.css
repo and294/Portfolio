@@ -196,10 +196,12 @@ nav a.active {
 /*skills*/
 #competence {
   height: 100vh;
-  background-color: #f0f8ff;
+  background-color: #0d1114;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 #skills {
@@ -268,7 +270,14 @@ position: relative;
   display: inline-block;
   height: 35px;
   border-radius: 50px;
-  text-align
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  top: 30px;
+  margin-left: -5px;
+  z-index: 1;
+  background: linear-gradient(to left, #ff0057, #ffe007);
+  box-shadow: 0 5px 30px rgb(255 0 87 / 50%), 0 5 30px rgb(255 255 59 / 50%);
 }
 
 /*projects*/
