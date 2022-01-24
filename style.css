@@ -197,6 +197,20 @@ nav a.active {
 #competence {
   height: 100vh;
   background-color: #f0f8ff;
+  display: flex;
+  align-items: center;
+}
+
+.wrap {
+  max-width: 60%;
+}
+
+.bar {
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
 }
 
 /*projects*/
