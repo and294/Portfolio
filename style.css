@@ -201,11 +201,10 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 #skills {
-position: relative;
+  position: relative;
 }
 
 .wrap {
@@ -235,7 +234,7 @@ position: relative;
 
 .bar span {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   height: 100%;
@@ -244,25 +243,25 @@ position: relative;
 }
 
 .bar:nth-child(1) {
-  width:70%;
+  width: 70%;
 }
 .bar:nth-child(2) {
-  width:60%;
+  width: 60%;
 }
 .bar:nth-child(3) {
-  width:70%;
+  width: 70%;
 }
 .bar:nth-child(4) {
-  width:50%;
+  width: 50%;
 }
 .bar:nth-child(5) {
-  width:80%;
+  width: 80%;
 }
 .bar:nth-child(6) {
-  width:40%;
+  width: 40%;
 }
 .bar:nth-child(7) {
-  width:30%;
+  width: 30%;
 }
 
 .bar abbr {
