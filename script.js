@@ -78,3 +78,15 @@ const configBio = {
   );
 
 observerBio.observe(bio);
+
+
+/*Skill bars animation*/
+
+
+/*gsap.from(".bar abbr", {
+  scrollTrigger: ".bar",
+  width: "0px",
+  ease: Power2.easeInOut,
+  duration: 3,
+  stager: 0.1
+})*/
