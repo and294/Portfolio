@@ -59,7 +59,7 @@ const config = {
 observerSteps.observe(step);
 
 /*Bio roll in*/
-const configBio = {
+/*const configBio = {
     root: null, // Sets the framing element to the viewport
     rootMargin: "0px",
     threshold: 0.5,
@@ -70,14 +70,22 @@ const configBio = {
       entries.forEach(({ target: { classList }, intersectionRatio }) => {
         if (intersectionRatio > 0.5) {
           classList.add("actived");
-        }/* else {
+        } else {
           classList.remove("actived");
-        }*/
+        }
       }),
     configBio
   );
 
-observerBio.observe(bio);
+observerBio.observe(bio);*/
+
+gsap.from(".bio", {
+  scrollTrigger: ".bio",
+  autoAlpha:0,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stager: 0.1
+});
 
 
 /*Skill bars animation*/

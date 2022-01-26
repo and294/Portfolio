@@ -403,8 +403,8 @@ nav a.active {
 
   .bio {
     width: 50vw;
-    transform: translateX(40%);
-    opacity: 0;
+    /*transform: translateX(40%);
+    opacity: 0;*/
     text-align: justify;
     align-self: end;
     margin-right: 70px;
@@ -420,11 +420,11 @@ nav a.active {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  /*.actived {
+  .actived {
     transform: translateX(0%);
     transition: 1s ease-out;
     opacity: 1;
-  }*/
+  }
   
   #competence {
   background: blue;
@@ -516,8 +516,8 @@ nav a.active {
 
   .bio {
     width: 80vw;
-    transform: translateX(40%);
-    opacity: 0;
+    /*transform: translateX(40%);
+    opacity: 0;*/
     text-align: justify;
     align-self: center;
     z-index: 1;
