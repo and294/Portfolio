@@ -49,9 +49,9 @@ const config = {
       entries.forEach(({ target: { classList }, intersectionRatio }) => {
         if (intersectionRatio > 0.5) {
           classList.add("propoactivated");
-        } else {
+        }/* else {
           classList.remove("propoactivated");
-        }
+        }*/
       }),
     config
   );
@@ -70,9 +70,9 @@ const configBio = {
       entries.forEach(({ target: { classList }, intersectionRatio }) => {
         if (intersectionRatio > 0.5) {
           classList.add("actived");
-        } else {
+        }/* else {
           classList.remove("actived");
-        }
+        }*/
       }),
     configBio
   );

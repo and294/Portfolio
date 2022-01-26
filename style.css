@@ -420,11 +420,11 @@ nav a.active {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  .actived {
+  /*.actived {
     transform: translateX(0%);
     transition: 1s ease-out;
     opacity: 1;
-  }
+  }*/
   
   #competence {
   background: blue;
