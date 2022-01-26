@@ -83,28 +83,21 @@ observerBio.observe(bio);
 /*Skill bars animation*/
 
 
-/*gsap.from(".bar abbr", {
+gsap.from(".bar abbr", {
+  scrollTrigger: ".bar",
+  left: 0,
+  ease: Power2.easeInOut,
+  duration: 3,
+  stager: 0.1
+});
+
+gsap.from(".bar span", {
   scrollTrigger: ".bar",
   width: "0px",
   ease: Power2.easeInOut,
   duration: 3,
   stager: 0.1
-})*/
+})
 
-const configBar = {
-    root: null, // Sets the framing element to the viewport
-    rootMargin: "0px",
-    threshold: 0.5,
-  },
-  etiquette = document.querySelectorAll(".bar abbr"),
-  observerEtiquette = new IntersectionObserver(
-    (entries) =>
-      entries.forEach(({ target: { classList }, intersectionRatio }) => {
-        if (intersectionRatio > 0.5) {
-          classList.add("abbrActived");
-        }
-      }),
-    configBio
-  );
 
-observerBio.observe(etiquette);
+

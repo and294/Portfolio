@@ -234,33 +234,39 @@ nav a.active {
 
 .bar span {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   height: 100%;
-  background: linear-gradient(to left, #ff0057, #ffeb3b);
+  /*background: linear-gradient(to left, #ff0057, #ffeb3b);*/
+  background: rgb(255, 195, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 195, 235, 1) 0%,
+    rgba(23, 101, 255, 1) 100%
+  );
   border-radius: 50px;
 }
 
-.bar:nth-child(1) span{
+.bar:nth-child(1) span {
   width: 70%;
 }
-.bar:nth-child(2) span{
+.bar:nth-child(2) span {
   width: 60%;
 }
-.bar:nth-child(3) span{
+.bar:nth-child(3) span {
   width: 70%;
 }
-.bar:nth-child(4) span{
+.bar:nth-child(4) span {
   width: 50%;
 }
-.bar:nth-child(5) span{
+.bar:nth-child(5) span {
   width: 80%;
 }
-.bar:nth-child(6) span{
+.bar:nth-child(6) span {
   width: 40%;
 }
-.bar:nth-child(7) span{
+.bar:nth-child(7) span {
   width: 30%;
 }
 
@@ -275,29 +281,35 @@ nav a.active {
   top: 69px;
   margin-left: -5px;
   z-index: 1;
-  background: linear-gradient(to left, #ff0057, #ffe007);
+  /*background: linear-gradient(to left, #ff0057, #ffe007);*/
+  background: rgb(255, 195, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 195, 235, 1) 0%,
+    rgba(23, 101, 255, 1) 100%
+  );
   box-shadow: 0 5px 30px rgb(255 0 87/ 50%), 0 5 30px rgb(255 255 59/ 50%);
 }
 
-.bar:nth-child(1) abbr{
+.bar:nth-child(1) abbr {
   left: 70%;
 }
-.bar:nth-child(2) abbr{
+.bar:nth-child(2) abbr {
   left: 60%;
 }
-.bar:nth-child(3) abbr{
+.bar:nth-child(3) abbr {
   left: 70%;
 }
-.bar:nth-child(4) abbr{
+.bar:nth-child(4) abbr {
   left: 50%;
 }
-.bar:nth-child(5) abbr{
+.bar:nth-child(5) abbr {
   left: 80%;
 }
-.bar:nth-child(6) abbr{
+.bar:nth-child(6) abbr {
   left: 40%;
 }
-.bar:nth-child(7) abbr{
+.bar:nth-child(7) abbr {
   left: 30%;
 }
 
