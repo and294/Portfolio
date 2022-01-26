@@ -426,9 +426,18 @@ nav a.active {
     opacity: 1;
   }
   
+  #competence {
+  background: blue;
+  }
+  
   .wrap {
     display: flex;
+    max-width: 80%;
   }
+  .column {
+  flex: 50%;
+  padding: 50px;  
+}
   
 }
 
