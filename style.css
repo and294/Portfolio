@@ -169,8 +169,8 @@ nav a.active {
 /*who am I*/
 .propo {
   text-align: center;
-  transform: translateX(-20%);
-  opacity: 0;
+  /*transform: translateX(-20%);
+  opacity: 0;*/
 }
 
 .propoactivated {

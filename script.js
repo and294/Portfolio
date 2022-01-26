@@ -37,7 +37,7 @@ navToggle.addEventListener("click", () => {
 
 /*Observer animations*/
 /*Who am I*/
-const config = {
+/*const config = {
     root: null, // Sets the framing element to the viewport
     rootMargin: "0px",
     threshold: 0.3,
@@ -49,14 +49,14 @@ const config = {
       entries.forEach(({ target: { classList }, intersectionRatio }) => {
         if (intersectionRatio > 0.5) {
           classList.add("propoactivated");
-        }/* else {
+        } else {
           classList.remove("propoactivated");
-        }*/
+        }
       }),
     config
   );
 
-observerSteps.observe(step);
+observerSteps.observe(step);*/
 
 /*Bio roll in*/
 /*const configBio = {
@@ -79,11 +79,23 @@ observerSteps.observe(step);
 
 observerBio.observe(bio);*/
 
+/*Who am I slide in*/
+gsap.from(".propo", {
+  scrollTrigger: ".propo",
+  autoAlpha:0,
+  xPercent: -100,
+  ease: Power2.easeInOut,
+  duration: 2,
+  stager: 0.1
+});
+
+/*bio slide in*/
 gsap.from(".bio", {
   scrollTrigger: ".bio",
   autoAlpha:0,
+  xPercent: 100,
   ease: Power2.easeInOut,
-  duration: 1,
+  duration: 2,
   stager: 0.1
 });
 
