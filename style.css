@@ -201,6 +201,7 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 #skills {
@@ -424,7 +425,13 @@ nav a.active {
     transition: 1s ease-out;
     opacity: 1;
   }
+  
+  .wrap {
+    display: flex;
+  }
+  
 }
+
 
 /*Phone & Tablet*/
 @media screen and (max-width: 1023px) {
@@ -522,6 +529,10 @@ nav a.active {
     transition: 1s ease-out;
     opacity: 1;
   }
+}
+
+#competence {
+  padding-top: 110px;
 }
 
 /*Hello neon animation*/
