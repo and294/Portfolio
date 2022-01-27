@@ -86,7 +86,7 @@ nav a.active {
 /*Hello page*/
 .intro {
   height: 100vh;
-  background-color: #0d1114;
+  background-color: #1b323a;
   color: white;
   padding-top: 50px;
   display: flex;
@@ -100,61 +100,9 @@ nav a.active {
 
 .frontend {
   font-size: 20px;
-  color: rgba(57, 93, 119, 1);
+  color: #6196a9;
 }
 
-/*Wavy lines*/
-.wave-line {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: -10;
-  transform: rotate(-15deg);
-  z-index: 1;
-}
-
-.wave-line .line {
-  position: absolute;
-  width: 100%;
-  height: 130px;
-}
-
-.wave-line .line1 {
-  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave1.png?v=1642588469117)
-    repeat-x;
-  background-size: contain;
-  animation: lineOne 50s linear infinite;
-}
-
-.wave-line .line2 {
-  background: url(https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/wave2.png?v=1642588615504)
-    repeat-x;
-  background-size: contain;
-  animation: lineTwo 50s linear infinite;
-}
-/*
-.wave-line .line3 {
-  background: yellow;
-  animation: lineThree 30s linear infinite;
-}*/
-
-@keyframes lineOne {
-  50% {
-    background-position: -150% 0;
-  }
-}
-
-@keyframes lineTwo {
-  50% {
-    background-position: -100% 0;
-  }
-}
-/*
-@keyframes lineThree {
-  50%{
-    background-position: 150% 0;
-  }
-}*/
 
 /*Who am I ? presentation*/
 #presentation {
@@ -179,12 +127,9 @@ nav a.active {
 }
 
 .bio {
-  background: rgb(0, 103, 130);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 103, 130, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
+  color: #1b323a;
+  background: rgb(189,150,253);
+background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 /*skills*/
@@ -396,8 +341,6 @@ nav a.active {
 
   .bio {
     width: 50vw;
-    /*transform: translateX(40%);
-    opacity: 0;*/
     text-align: justify;
     align-self: end;
     margin-right: 70px;
@@ -406,14 +349,9 @@ nav a.active {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  .actived {
-    transform: translateX(0%);
-    transition: 1s ease-out;
-    opacity: 1;
-  }
 
   #competence {
-    background: blue;
+    background: white;
   }
 
   .wrap {
@@ -500,41 +438,28 @@ nav a.active {
 
   .bio {
     width: 80vw;
-    /*transform: translateX(40%);
-    opacity: 0;*/
     text-align: justify;
     align-self: center;
     z-index: 1;
-    background: rgb(57, 93, 119);
-    background: linear-gradient(
-      90deg,
-      rgba(57, 93, 119, 1) 0%,
-      rgba(32, 53, 68, 1) 60%,
-      rgba(13, 17, 20, 1) 100%
-    );
     padding: 20px;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     transition: 1s ease-out;
   }
-  .actived {
-    transform: translateX(0%);
-    transition: 1s ease-out;
-    opacity: 1;
-  }
-}
-
-#competence {
+  #competence {
   padding-top: 110px;
 }
+}
+
+
 
 /*Hello neon animation*/
 .hello {
   letter-spacing: 2;
   font-size: 40px;
   font-family: "Pacifico", cursive;
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+  color: #faeaff;
+  text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #ff65bd,
     -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   animation: shine 2s forwards, flicker 3s infinite;
@@ -547,8 +472,8 @@ nav a.active {
   22%,
   36%,
   75% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    color: #faeaff;
+    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #ff65bd,
       -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   }
@@ -578,8 +503,8 @@ nav a.active {
     text-shadow: none;
   }
   100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    color: #faeaff;
+    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #ff65bd,
       -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   }
