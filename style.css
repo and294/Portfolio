@@ -48,12 +48,8 @@ nav {
   z-index: 1000;
   top: 50px;
   left: 0px;
-  background: rgb(0, 1, 1);
-  background: linear-gradient(
-    90deg,
-    rgba(13, 17, 20, 1) 0%,
-    rgba(57, 93, 119, 1) 100%
-  );
+  background: rgb(27,50,58);
+  background: linear-gradient(90deg, rgba(27,50,58,1) 0%, rgba(97,150,169,1) 100%);
   overflow-x: hidden;
   padding: 8px 0;
   border-top-right-radius: 20px 20px;
@@ -67,27 +63,27 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  color: ##fdf7ff;
+  text-shadow: 0 0 0.6rem #fdf7ff, 0 0 1.5rem #bd96fd,
+    -0.2rem 0.1rem 1rem #bd96fd, 0.2rem 0.1rem 1rem #bd96fd,
+    0 -0.5rem 2rem #9b89b4, 0 0.5rem 3rem #9b89b4;
   opacity: 1;
   font-weight: bold;
 }
 
 nav a.active {
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  color: #fdf7ff;
+  text-shadow: 0 0 0.6rem #fdf7ff, 0 0 1.5rem #bd96fd,
+    -0.2rem 0.1rem 1rem #bd96fd, 0.2rem 0.1rem 1rem #bd96fd,
+    0 -0.5rem 2rem #9b89b4, 0 0.5rem 3rem #9b89b4;
   animation: shine 1s forwards, flicker 3s;
 }
 
 /*Hello page*/
 .intro {
   height: 100vh;
-  background-color: #1b323a;
-  color: white;
+  background: rgb(20,37,43);
+background: linear-gradient(90deg, rgba(20,37,43,1) 0%, rgba(27,50,58,1) 15%, rgba(27,50,58,1) 50%, rgba(27,50,58,1) 85%, rgba(20,37,43,1) 100%);
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -134,8 +130,8 @@ background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 1
 
 /*skills*/
 #competence {
-  background-color: #0d1114;
-  color: white;
+  background-color: white;
+  color: #1b323a;
   display: flex;
   align-items: center;
   justify-content: center;
