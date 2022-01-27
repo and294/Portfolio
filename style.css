@@ -457,11 +457,15 @@ background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 1
 .hello {
   letter-spacing: 2;
   font-size: 40px;
-  font-family: "Pacifico", cursive;
+  /*font-family: "Pacifico", cursive;*/
+  @font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
   color: #faeaff;
-  text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #bd96fd,
+    -0.2rem 0.1rem 1rem #bd96fd, 0.2rem 0.1rem 1rem #bd96fd,
+    0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
   animation: shine 2s forwards, flicker 3s infinite;
   -webkit-animation: swing-in-top-fwd 0.3s ease-out 1s both;
   animation: swing-in-top-fwd 0.3s ease-out 1s both;
@@ -473,18 +477,18 @@ background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 1
   36%,
   75% {
     color: #faeaff;
-    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem ,
+      -0.2rem 0.1rem 1rem , 0.2rem 0.1rem 1rem ,
+      0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
   }
   28%,
   33% {
-    color: #ff65bd;
+    color: #bd96fd;
     text-shadow: none;
   }
   82%,
   97% {
-    color: #ff2483;
+    color: #bd96fd;
     text-shadow: none;
   }
 }
@@ -503,10 +507,10 @@ background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 1
     text-shadow: none;
   }
   100% {
-    color: #faeaff;
-    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    color: #faeaff#bd96fd;
+    text-shadow: 0 0 0.6rem #faeaff#bd96fd, 0 0 1.5rem #bd96fd,
+      -0.2rem 0.1rem 1rem #bd96fd, 0.2rem 0.1rem 1rem #bd96fd,
+      0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
   }
 }
 
