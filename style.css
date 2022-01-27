@@ -48,8 +48,12 @@ nav {
   z-index: 1000;
   top: 50px;
   left: 0px;
-  background: rgb(27,50,58);
-  background: linear-gradient(90deg, rgba(27,50,58,1) 0%, rgba(97,150,169,1) 100%);
+  background: rgb(27, 50, 58);
+  background: linear-gradient(
+    90deg,
+    rgba(27, 50, 58, 1) 0%,
+    rgba(97, 150, 169, 1) 100%
+  );
   overflow-x: hidden;
   padding: 8px 0;
   border-top-right-radius: 20px 20px;
@@ -81,12 +85,38 @@ nav a.active {
 
 /*Hello page*/
 .intro {
-  height: 100vh;
-  background: rgb(20,37,43);
-background: linear-gradient(90deg, rgba(20,37,43,1) 0%, rgba(27,50,58,1) 15%, rgba(27,50,58,1) 50%, rgba(27,50,58,1) 85%, rgba(20,37,43,1) 100%);
+  background: rgb(20, 37, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 37, 43, 1) 0%,
+    rgba(27, 50, 58, 1) 15%,
+    rgba(27, 50, 58, 1) 50%,
+    rgba(27, 50, 58, 1) 85%,
+    rgba(20, 37, 43, 1) 100%
+  );
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.intro:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-4deg);
 }
 
 /*I'm Andrea*/
@@ -98,7 +128,6 @@ background: linear-gradient(90deg, rgba(20,37,43,1) 0%, rgba(27,50,58,1) 15%, rg
   font-size: 20px;
   color: #6196a9;
 }
-
 
 /*Who am I ? presentation*/
 #presentation {
@@ -124,8 +153,12 @@ background: linear-gradient(90deg, rgba(20,37,43,1) 0%, rgba(27,50,58,1) 15%, rg
 
 .bio {
   color: #1b323a;
-  background: rgb(189,150,253);
-background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 100%);
+  background: rgb(189, 150, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(189, 150, 253, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 /*skills*/
@@ -443,11 +476,9 @@ background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 1
     transition: 1s ease-out;
   }
   #competence {
-  padding-top: 110px;
+    padding-top: 110px;
+  }
 }
-}
-
-
 
 /*Hello neon animation*/
 .hello {
@@ -455,9 +486,9 @@ background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 1
   font-size: 40px;
   /*font-family: "Pacifico", cursive;*/
   @font-face {
-  font-family: Clip;
-  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-}
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
   color: #faeaff;
   text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #bd96fd,
     -0.2rem 0.1rem 1rem #bd96fd, 0.2rem 0.1rem 1rem #bd96fd,
@@ -473,9 +504,8 @@ background: linear-gradient(90deg, rgba(189,150,253,1) 0%, rgba(255,255,255,1) 1
   36%,
   75% {
     color: #faeaff;
-    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem ,
-      -0.2rem 0.1rem 1rem , 0.2rem 0.1rem 1rem ,
-      0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
+    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem, -0.2rem 0.1rem 1rem,
+      0.2rem 0.1rem 1rem, 0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
   }
   28%,
   33% {
