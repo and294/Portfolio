@@ -35,49 +35,15 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-/*Observer animations*/
-/*Who am I*/
-/*const config = {
-    root: null, // Sets the framing element to the viewport
-    rootMargin: "0px",
-    threshold: 0.3,
-  },
-  
-  step = document.querySelector(".propo"),
-  observerSteps = new IntersectionObserver(
-    (entries) =>
-      entries.forEach(({ target: { classList }, intersectionRatio }) => {
-        if (intersectionRatio > 0.5) {
-          classList.add("propoactivated");
-        } else {
-          classList.remove("propoactivated");
-        }
-      }),
-    config
-  );
+gsap.from(".hello", {
+  scrollTrigger: ".hello",
+  autoAlpha:0,
+  xPercent: -100,
+  ease: Power2.easeInOut,
+  duration: 2,
+  stager: 0.1
+});
 
-observerSteps.observe(step);*/
-
-/*Bio roll in*/
-/*const configBio = {
-    root: null, // Sets the framing element to the viewport
-    rootMargin: "0px",
-    threshold: 0.5,
-  },
-  bio = document.querySelector(".bio"),
-  observerBio = new IntersectionObserver(
-    (entries) =>
-      entries.forEach(({ target: { classList }, intersectionRatio }) => {
-        if (intersectionRatio > 0.5) {
-          classList.add("actived");
-        } else {
-          classList.remove("actived");
-        }
-      }),
-    configBio
-  );
-
-observerBio.observe(bio);*/
 
 /*Who am I slide in*/
 gsap.from(".propo", {
