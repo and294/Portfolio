@@ -69,12 +69,13 @@ gsap.from(".frontend", {
   stager: 0.1,
 });
 /*photo roll in*/
-gsap.from(".name", {
-  scrollTrigger: ".name",
+gsap.from(".photo", {
+  scrollTrigger: ".photo",
   autoAlpha: 0,
-  xPercent: -20,
+  xPercent: -100,
   ease: Power2.easeInOut,
-  duration: 1,
+  rotation: -360,
+  duration: 3,
   stager: 0.1,
 });
 
