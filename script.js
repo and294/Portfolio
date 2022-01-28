@@ -35,46 +35,47 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-gsap.from(".hello", {
-  scrollTrigger: ".hello",
-  autoAlpha:0,
-  xPercent: -100,
-  ease: Power2.easeInOut,
-  duration: 2,
-  stager: 0.1
-});
+const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability.
 
+const transformOriginValue = "50% -" + swingRadius + "vh";
+
+gsap.from(".hello", {
+  duration: 10,
+  rotation: "-30deg",
+  transformOrigin: transformOriginValue,
+  ease: "elastic.out( 3, 0.1)",
+  /*repeat: -1,*/
+  delay: 0,
+});
 
 /*Who am I slide in*/
 gsap.from(".propo", {
   scrollTrigger: ".propo",
-  autoAlpha:0,
-  xPercent: -100,
+  autoAlpha: 0,
+  xPercent: -20,
   ease: Power2.easeInOut,
-  duration: 2,
-  stager: 0.1
+  duration: 1,
+  stager: 0.1,
 });
 
 /*bio slide in*/
 gsap.from(".bio", {
   scrollTrigger: ".bio",
-  autoAlpha:0,
-  xPercent: 100,
+  autoAlpha: 0,
+  xPercent: 50,
   ease: Power2.easeInOut,
-  duration: 2,
-  stager: 0.1
+  duration: 1,
+  stager: 0.1,
 });
 
-
 /*Skill bars animation*/
-
 
 gsap.from(".bar abbr", {
   scrollTrigger: ".bar",
   left: 0,
   ease: Power2.easeInOut,
   duration: 3,
-  stager: 0.1
+  stager: 0.1,
 });
 
 gsap.from(".bar span", {
@@ -82,8 +83,5 @@ gsap.from(".bar span", {
   width: "0px",
   ease: Power2.easeInOut,
   duration: 3,
-  stager: 0.1
-})
-
-
-
+  stager: 0.1,
+});
