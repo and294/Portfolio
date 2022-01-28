@@ -101,6 +101,8 @@ nav a.active {
 .frontend {
   font-size: 20px;
   color: #6196a9;
+  align-self: center;
+  margin-top: -20px;
 }
 
 /*Who am I ? presentation*/
