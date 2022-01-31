@@ -120,13 +120,6 @@ nav a.active {
   color: black;
 }
 
-.step1 {
-  vertical-align: 60%;
-}
-.step3 {
-  vertical-align: -60%;
-}
-
 .bio {
   color: #1b323a;
   background: rgb(189, 150, 253);
@@ -236,25 +229,25 @@ nav a.active {
 }
 
 .bar:nth-child(1) abbr {
-  left: 70%;
-}
-.bar:nth-child(2) abbr {
   left: 60%;
 }
-.bar:nth-child(3) abbr {
-  left: 70%;
-}
-.bar:nth-child(4) abbr {
+.bar:nth-child(2) abbr {
   left: 50%;
 }
-.bar:nth-child(5) abbr {
-  left: 80%;
+.bar:nth-child(3) abbr {
+  left: 60%;
 }
-.bar:nth-child(6) abbr {
+.bar:nth-child(4) abbr {
   left: 40%;
 }
-.bar:nth-child(7) abbr {
+.column .two .bar:nth-child(1) abbr {
+  left: 70%;
+}
+.column .two .bar:nth-child(2) abbr {
   left: 30%;
+}
+.column .two .bar:nth-child(3) abbr {
+  left: 20%;
 }
 
 /*projects*/
