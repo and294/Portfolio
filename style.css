@@ -279,28 +279,28 @@ nav a.active {
   transition: 0.3s;  
 }
 
-.tile .hex1 {
+.hex1 {
   grid-area: g1;
 }
-.tile .hex2 {
+.hex2 {
   grid-area: g2;
 }
-.tile .hex3 {
+.hex3 {
   grid-area: g3;
 }
-.tile .hex4 {
+.hex4 {
   grid-area: g4;
 }
-.tile .hex5 {
+.hex5 {
   grid-area: g5;
 }
-.tile .hex6 {
+.hex6 {
   grid-area: g6;
 }
-.tile .hex7 {
+.hex7 {
   grid-area: g7;
 }
-.tile .hex8 {
+.hex8 {
   grid-area: g8;
 }
 
