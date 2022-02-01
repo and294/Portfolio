@@ -2,8 +2,8 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  --s: 100px;  /* size  */
-  --m: 4px;    /* margin */
+  --s: 100px; /* size  */
+  --m: 4px; /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
 
@@ -136,7 +136,7 @@ nav a.active {
 /*skills*/
 #competence {
   background-color: white;
-  color: rgb(27, 50, 58);;
+  color: rgb(27, 50, 58);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +152,7 @@ nav a.active {
 }
 
 .bar {
-  color: rgb(27, 50, 58);;
+  color: rgb(27, 50, 58);
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 16px;
@@ -254,7 +254,7 @@ nav a.active {
 }
 
 /*projects*/
-#realisation { 
+#realisation {
   background-color: #f0f8ff;
   display: flex;
   flex-direction: column;
@@ -263,28 +263,55 @@ nav a.active {
 }
 
 .Protiles {
- display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 5px;
-grid-row-gap: 5px; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
 }
 
-.tile1 { grid-area: 1 / 1 / 2 / 2;
-width: 50px;
-  aspect-ratio
+.tile1 {
+  grid-area: 1 / 1 / 2 / 2;
 }
-.tile2 { grid-area: 1 / 2 / 2 / 3; }
-.tile3 { grid-area: 1 / 3 / 2 / 4; }
-.tile4 { grid-area: 2 / 1 / 3 / 2; }
-.tile5 { grid-area: 2 / 2 / 3 / 3; }
-.tile6 { grid-area: 2 / 3 / 3 / 4; }
-.tile7 { grid-area: 3 / 1 / 4 / 2; }
-.tile8 { grid-area: 3 / 2 / 4 / 3; }
-.tile9 { grid-area: 3 / 3 / 4 / 4; } 
+.tile2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.tile3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.tile4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.tile5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.tile6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.tile7 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.tile8 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.tile9 {
+  grid-area: 3 / 3 / 4 / 4;
+}
 
+.projectImg {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 5%;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s
+}
 
-
+.projectImg:hover {
+  z-index: 2;
+  position: absolute;
+  transform: scale(1.5)
+}
 
 /*contacts*/
 #inTouch {
