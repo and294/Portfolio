@@ -304,7 +304,7 @@ nav a.active {
   border-radius: 5%;
   cursor: pointer;
   position: relative;
-  transition: 0.5s
+  transition: 0.3s
 }
 
 .projectImg:hover {
