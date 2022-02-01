@@ -2,6 +2,9 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  --s: 100px;  /* size  */
+  --m: 4px;    /* margin */
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
 
 *,
@@ -259,20 +262,27 @@ nav a.active {
   justify-content: center;
 }
 
-.Protiles .tile{
-  width: 50px;
-  margin: 10px;
-  height: 50px; 
-  display: inline-block;
-  font-size:initial;
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-  background: red;
-  
+.Protiles {
+ display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px; 
 }
 
-.tile {
-
+.tile1 { grid-area: 1 / 1 / 2 / 2;
+width: 50px;
+  aspect-ratio
 }
+.tile2 { grid-area: 1 / 2 / 2 / 3; }
+.tile3 { grid-area: 1 / 3 / 2 / 4; }
+.tile4 { grid-area: 2 / 1 / 3 / 2; }
+.tile5 { grid-area: 2 / 2 / 3 / 3; }
+.tile6 { grid-area: 2 / 3 / 3 / 4; }
+.tile7 { grid-area: 3 / 1 / 4 / 2; }
+.tile8 { grid-area: 3 / 2 / 4 / 3; }
+.tile9 { grid-area: 3 / 3 / 4 / 4; } 
+
 
 
 
