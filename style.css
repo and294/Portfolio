@@ -99,7 +99,6 @@ nav a.active {
 /*I'm Andrea*/
 .name {
   font-size: 60px;
-  text-transform: uppercase;
 }
 
 
@@ -110,6 +109,7 @@ nav a.active {
   margin-top: -20px;  
   text-transform: uppercase;
   -webkit-text-stroke: 0.1vw #6196a9;
+  white-space : nowrap;
 }
 
 .frontend::before {
@@ -120,14 +120,14 @@ nav a.active {
   width: 0;
   height: 100%;
   color: #6196a9;
-  -webkit-text-stroke: 0.1vw rgb(20, 37, 43);
+  /*-webkit-text-stroke: 0.1vw rgb(20, 37, 43);*/
   overflow: hidden;
   animation: animate 10s linear infinite;
 }
 
 
 @keyframes animate {
-  0%, 10%, 100%    { width: 0; }
+  0%, 100%   { width: 0; }
   70%, 90%  { width: 100%; }
 }
 
