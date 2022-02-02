@@ -107,15 +107,22 @@ nav a.active {
   align-self: center;
   margin-top: -20px;  
 }
-
-.frontMain {
-  z-index: 1;
-  position: relative;
+.frontend::before {
+  content:"Front end developer";
+  position:absolute;
+  z-index:-1;
+  opacity: 0.3;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:inherit;
+  animation: slideshow 10s linear infinite;
 }
 
-.textSlide {
-  position: absolute;
-  z-index: -1;
+@keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -500%; }
 }
 
 /*Who am I ? presentation*/
