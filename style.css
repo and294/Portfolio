@@ -98,24 +98,34 @@ nav a.active {
 
 /*I'm Andrea*/
 .name {
-  font-size: 40px;
+  font-size: 60px;
   text-transform: uppercase;
 }
 
 .frontend {
-  font-size: 20px;
-  color: #6196a9;
+  font-size: 40px;
+  color: rgb(20, 37, 43);
   align-self: center;
   margin-top: -20px;  
   text-transform: uppercase;
+  -webkit-text-stroke: 0.1vw #6196a9;
 }
 
 .frontend::before {
-  
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #6196a9;
+  -webkit-text-stroke: 0.1vw rgb(20, 37, 43);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
 }
 
 
-@keyframes slideshow {
+@keyframes animate {
   0%    { left: 0; }
   100%  { left: -500%; }
 }
@@ -356,10 +366,10 @@ nav a.active {
     z-index: 1;
   }
 
-  .frontend {
+  /*.frontend {
     font-size: 30px;
     z-index: 1;
-  }
+  }*/
 
   #presentation {
     padding-top: 100px;
