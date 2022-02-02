@@ -105,7 +105,17 @@ nav a.active {
   font-size: 20px;
   color: #6196a9;
   align-self: center;
-  margin-top: -20px;
+  margin-top: -20px;  
+}
+
+.frontMain {
+  z-index: 1;
+  position: relative;
+}
+
+.textSlide {
+  position: absolute;
+  z-index: -1;
 }
 
 /*Who am I ? presentation*/
