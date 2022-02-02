@@ -99,6 +99,7 @@ nav a.active {
 /*I'm Andrea*/
 .name {
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .frontend {
@@ -106,19 +107,13 @@ nav a.active {
   color: #6196a9;
   align-self: center;
   margin-top: -20px;  
+  text-transform: uppercase;
 }
+
 .frontend::before {
-  content:"Front end developer";
-  position:absolute;
-  z-index:-1;
-  opacity: 0.3;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  border-radius:inherit;
-  animation: slideshow 10s linear infinite;
+  
 }
+
 
 @keyframes slideshow {
   0%    { left: 0; }
