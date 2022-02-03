@@ -144,7 +144,7 @@ nav a.active {
 /*who am I*/
 .propo {
   text-align: center;
-  color: black;
+  color: rgb(27, 50, 58);
 }
 
 .bio {
@@ -152,7 +152,7 @@ nav a.active {
   background: rgb(189, 150, 253);
   background: linear-gradient(
     90deg,
-    rgba(189, 150, 253, 1) 0%,
+    rgba(189, 150, 253, 0.2) 0%,
     rgba(255, 255, 255, 1) 100%
   );
 }
@@ -169,6 +169,7 @@ nav a.active {
 
 #skills {
   position: relative;
+  color: rgb(27, 50, 58);
 }
 
 .wrap {
