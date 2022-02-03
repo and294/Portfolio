@@ -294,6 +294,11 @@ nav a.active {
   grid-row-gap: 5px;
 }
 
+.Protiles img {
+  transition: 1s;
+  
+}
+
 .tile1 {
   grid-area: 1 / 1 / 2 / 2;
 }
