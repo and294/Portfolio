@@ -94,6 +94,7 @@ nav a.active {
   color: white;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+
 }
 
 /*I'm Andrea*/
