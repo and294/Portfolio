@@ -155,6 +155,7 @@ nav a.active {
     rgba(189, 150, 253, 0.2) 0%,
     rgba(255, 255, 255, 1) 100%
   );
+  overflow: hidden;
 }
 
 /*skills*/
