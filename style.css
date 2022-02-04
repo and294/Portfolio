@@ -512,6 +512,10 @@ nav a.active {
     align-self: center;
     text-align: center;
   }
+  
+  .frontend {
+    font-size: 25px;
+  }
 
   .photo {
     width: 200px;
