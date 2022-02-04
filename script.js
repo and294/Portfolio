@@ -55,7 +55,7 @@ var rule = CSSRulePlugin.getRule(".name:after");
 gsap.from(".name", {
   scrollTrigger: ".name",
   opacity: 0,
-  y: 50,
+  y: -50,
   duration: 1,
 });
 
@@ -116,4 +116,14 @@ gsap.from(".bar span", {
   ease: Power2.easeInOut,
   duration: 3,
   stager: 0.1,
+});
+
+/*Grid entrance*/
+
+gsap.from(".tile", {
+  scrollTrigger: ".tile",
+  opacity: 0,
+  y: -50,
+  duration: 1,
+  stager: 0.6
 });
