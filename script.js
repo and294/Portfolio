@@ -122,12 +122,11 @@ gsap.from(".bar span", {
 
 gsap.from(".tile", {
   scrollTrigger: ".tile",
-  start: "top center",
+  start: "top 5%",
   y: -50,
   scale: 1.3,
   duration: 0.5,
-  stager: 0.6,
-  scrub: 1
+  stager: {0.5,
 });
 
 
