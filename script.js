@@ -128,3 +128,13 @@ gsap.from(".tile", {
   stager: 0.6,
   scrub: 1
 });
+
+gsap.from(".tile", {
+  scrollTrigger: ".tile",
+  opacity: 0,
+  y: -50,
+  duration: 1,
+  stager: 0.6,
+  scrub: 1
+});
+
