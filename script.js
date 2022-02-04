@@ -50,15 +50,16 @@ gsap.from(".hello", {
 });
 
 /*Name slide in*/
+var rule = CSSRulePlugin.getRule(".name:after");
+
 gsap.from(".name", {
   scrollTrigger: ".name",
-  autoAlpha: 0,
   opacity: 0,
-  y: 80,
-  ease: Power2.easeInOut,
+  y: 50,
   duration: 1,
-  stager: 0.1,
 });
+
+gsap.to(rule, {cssRule: {scaleY: 0}, duration: 1})
 /*Font end slide in*/
 gsap.from(".frontend", {
   scrollTrigger: ".frontend",

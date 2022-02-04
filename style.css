@@ -102,6 +102,17 @@ nav a.active {
   font-size: 60px;
 }
 
+.name:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 50, 58, 1);
+  z-index: 1;
+  transform-origin: 100% 0;
+}
+
 
 .frontend {
   font-size: 40px;
