@@ -125,5 +125,6 @@ gsap.from(".tile", {
   opacity: 0,
   y: -50,
   duration: 1,
-  stager: 0.6
+  stager: 0.6,
+  scrub: 1
 });
