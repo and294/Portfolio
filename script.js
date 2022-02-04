@@ -53,6 +53,7 @@ gsap.from(".hello", {
 gsap.from(".name", {
   scrollTrigger: ".name",
   autoAlpha: 0,
+  opacity: 0,
   y: 80,
   ease: Power2.easeInOut,
   duration: 1,
