@@ -35,7 +35,6 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-
 /*Hello swing on load*/
 const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability.
 
@@ -54,7 +53,6 @@ gsap.from(".hello", {
 gsap.from(".name", {
   scrollTrigger: ".name",
   autoAlpha: 0,
-  /*xPercent: -20,*/
   y: 80,
   ease: Power2.easeInOut,
   duration: 1,
@@ -79,7 +77,6 @@ gsap.from(".photo", {
   duration: 3,
   stager: 0.1,
 });
-
 
 /*Who am I slide in*/
 gsap.from(".propo", {
