@@ -121,12 +121,15 @@ gsap.from(".bar span", {
 /*Grid entrance*/
 
 gsap.from(".tile", {
-  scrollTrigger: ".tile",
-  start: "top 5%",
+  scrollTrigger: {
+    trigger: ".tile",
+    toggleActions: "restart none none none",
+    start: "center"
+  },
   y: -50,
   scale: 1.3,
   duration: 0.5,
-  stager: {0.5,
+  stager: {eact: 0.5},
 });
 
 

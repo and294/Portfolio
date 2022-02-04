@@ -322,31 +322,31 @@ nav a.active {
   
 }
 
-.tile1 {
+#tile1 {
   grid-area: 1 / 1 / 2 / 2;
 }
-.tile2 {
+#tile2 {
   grid-area: 1 / 2 / 2 / 3;
 }
-.tile3 {
+#tile3 {
   grid-area: 1 / 3 / 2 / 4;
 }
-.tile4 {
+#tile4 {
   grid-area: 2 / 1 / 3 / 2;
 }
-.tile5 {
+#tile5 {
   grid-area: 2 / 2 / 3 / 3;
 }
-.tile6 {
+#tile6 {
   grid-area: 2 / 3 / 3 / 4;
 }
-.tile7 {
+#tile7 {
   grid-area: 3 / 1 / 4 / 2;
 }
-.tile8 {
+#tile8 {
   grid-area: 3 / 2 / 4 / 3;
 }
-.tile9 {
+#tile9 {
   grid-area: 3 / 3 / 4 / 4;
 }
 
