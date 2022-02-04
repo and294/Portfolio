@@ -59,7 +59,7 @@ gsap.from(".name", {
   duration: 1,
 });
 
-gsap.to(rule, {cssRule: {scaleY: 0}, duration: 1})
+gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1 });
 /*Font end slide in*/
 gsap.from(".frontend", {
   scrollTrigger: ".frontend",
@@ -124,12 +124,10 @@ gsap.from(".tile", {
   scrollTrigger: {
     trigger: ".tile",
     toggleActions: "restart none none none",
-    start: "center"
+    start: "top 80%",
   },
   y: -50,
   scale: 1.3,
   duration: 0.5,
-  stager: {eact: 0.5},
+  stager: { eact: 0.5 },
 });
-
-

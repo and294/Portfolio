@@ -94,7 +94,6 @@ nav a.active {
   color: white;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
-
 }
 
 /*I'm Andrea*/
@@ -103,7 +102,7 @@ nav a.active {
 }
 
 .name:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 0;
   width: 100%;
@@ -123,15 +122,14 @@ nav a.active {
   transform-origin: 100% 0;
 }
 
-
 .frontend {
   font-size: 40px;
   color: rgb(20, 37, 43);
   align-self: center;
-  margin-top: -20px;  
+  margin-top: -20px;
   text-transform: uppercase;
   -webkit-text-stroke: 0.1vw #6196a9;
-  white-space : nowrap;
+  white-space: nowrap;
 }
 
 .frontend::before {
@@ -147,10 +145,15 @@ nav a.active {
   animation: animate 10s linear infinite;
 }
 
-
 @keyframes animate {
-  0%, 100%   { width: 0; }
-  70%, 90%  { width: 100%; }
+  0%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 
 /*Who am I ? presentation*/
@@ -319,7 +322,6 @@ nav a.active {
 
 .Protiles img {
   transition: 1s;
-  
 }
 
 #tile1 {
@@ -356,13 +358,13 @@ nav a.active {
   border-radius: 5%;
   cursor: pointer;
   position: relative;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 .projectImg:hover {
   z-index: 2;
   position: absolute;
-  transform: scale(1.5)
+  transform: scale(1.5);
 }
 
 /*contacts*/
@@ -379,13 +381,24 @@ nav a.active {
   nav p {
     display: none;
   }
+  nav {
+    height: 100%;
+    top: 0;
+    border-radius: 0%;
+    background: rgb(27, 50, 58);
+    background: linear-gradient(
+      90deg,
+      rgba(27, 50, 58, 0.1) 0%,
+      rgba(97, 150, 169, 0.1) 100%
+    );
+  }
 
   .hello {
     text-align: center;
     font-size: 40px;
   }
 
-    .name {
+  .name {
     width: 100vw;
     align-self: center;
     text-align: center;
@@ -450,16 +463,15 @@ nav a.active {
   #competence {
     background: white;
   }
-
-  /*.wrap {
-    display: flex;
-    max-width: 80%;
-    flex-direction: column;
-  }
-  .column {
-    flex: 50%;
-    padding: 50px;
-  }*/
+  
+  .Protiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+  
 }
 
 /*Phone & Tablet*/
@@ -512,7 +524,7 @@ nav a.active {
     align-self: center;
     text-align: center;
   }
-  
+
   .frontend {
     font-size: 25px;
   }
