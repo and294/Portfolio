@@ -135,4 +135,6 @@ gsap.from(".tile", {
   stager: { eact: 0.5 },
 });
 
-VanillaTilt.init(document.querySelectorAll(".tile"));
+VanillaTilt.init(document.querySelector(".bio"), {
+  glare: true,
+});
