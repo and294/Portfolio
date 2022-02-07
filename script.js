@@ -24,17 +24,16 @@ window.addEventListener("scroll", () => {
 /*hide nav on phone and tablet*/
 const primaryNav = document.querySelector(".nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
-const icon = document.querySelector("#icon")
+const icon = document.querySelector("#icon");
 
 navToggle.addEventListener("click", () => {
   const visibility = primaryNav.getAttribute("data-visible");
   if (visibility === "false") {
     primaryNav.setAttribute("data-visible", "true");
-    icon.classList.toggle("fa-thumbs-down");
-    
+    navToggle.setAttribute("aria-expended", "true");
   } else {
     primaryNav.setAttribute("data-visible", "false");
-    icon.classList.toggle("fas fa-bars fa-2x");
+    navToggle.setAttribute("aria-expended", "false");
   }
 });
 
