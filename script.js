@@ -30,11 +30,11 @@ navToggle.addEventListener("click", () => {
   const visibility = primaryNav.getAttribute("data-visible");
   if (visibility === "false") {
     primaryNav.setAttribute("data-visible", "true");
-    icon.setAttribute("class", "fas fa-times fa-2x");
+    icon.classList.toggle("fa-thumbs-down");
     
   } else {
     primaryNav.setAttribute("data-visible", "false");
-    icon.setAttribute("class", "fas fa-bars fa-2x");
+    icon.classList.toggle("fas fa-bars fa-2x");
   }
 });
 
