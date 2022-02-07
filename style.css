@@ -358,13 +358,14 @@ nav a.active {
   border-radius: 5%;
   cursor: pointer;
   position: relative;
-  transition: 0.3s;
+  transition: 0.1s ease-in;
+  z-index: 1;
 }
 
 .projectImg:hover {
-  z-index: 2;
+  z-index: 20;
   position: absolute;
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 /*contacts*/

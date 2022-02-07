@@ -134,3 +134,5 @@ gsap.from(".tile", {
   duration: 0.5,
   stager: { eact: 0.5 },
 });
+
+VanillaTilt.init(document.querySelectorAll(".tile"));
