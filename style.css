@@ -498,7 +498,18 @@ nav a.active {
     background: none;
     border: none;
     cursor: pointer;
+      .burger {
+    display: block;
+    height: 3px;
+    background: blue;    
+    
   }
+
+    
+    
+  }
+  
+  
 
   .nav {
     padding-top: 3rem;
