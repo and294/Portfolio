@@ -43,14 +43,10 @@ const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var
 
 const transformOriginValue = "50% -" + swingRadius + "vh";
 
-gsap.from(".hello", {
-  duration: 10,
-  rotation: "-30deg",
-  transformOrigin: transformOriginValue,
-  ease: "elastic.out( 3, 0.1)",
-  /*repeat: -1,*/
-  delay: 0,
-});
+
+
+
+
 
 /*Name slide in*/
 var rule = CSSRulePlugin.getRule(".name:after");
@@ -63,6 +59,7 @@ gsap.from(".name", {
 });
 
 gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1 });
+
 /*Font end slide in*/
 gsap.from(".frontend", {
   scrollTrigger: ".frontend",
