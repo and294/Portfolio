@@ -498,19 +498,24 @@ nav a.active {
     background: none;
     border: none;
     cursor: pointer;
-      .burger {
+     
+  }
+   .burger {
     display: block;
     height: 3px;
-    background: blue;    
-    
-  }
-
-    
-    
-  }
+    background: blue;       
+  }   
   
+ .first[aria-expended="true"] {
+       transform: rotate(45deg);
+     }
+ .second[aria-expended="true"] {
+       opacity: 0;
+     }
+ .third[aria-expended="true"] {
+       transform: rotate(-45deg);
+     }
   
-
   .nav {
     padding-top: 3rem;
     transform: translateX(-100%);
