@@ -50,9 +50,9 @@ navToggle.addEventListener("click", () => {
     scrub: true,
     pin: true
   }
-});*/
+});
 
-gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
+gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});*/
 
 /*little bar animation*/
 gsap.from(".hr", {
@@ -129,6 +129,18 @@ gsap.from(".bio", {
   scrollTrigger: ".bio",
   autoAlpha: 0,
   xPercent: 50,
+  ease: Power2.easeInOut,
+  duration: 1,
+  delay: 0.5,
+  stager: 0.1,
+});
+
+/*Skill slide in*/
+/*Who am I slide in*/
+gsap.from(".skill", {
+  scrollTrigger: ".skill",
+  autoAlpha: 0,
+  yPercent: 50,
   ease: Power2.easeInOut,
   duration: 1,
   stager: 0.1,
