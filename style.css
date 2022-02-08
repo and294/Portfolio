@@ -503,17 +503,19 @@ nav a.active {
    .burger {
     display: block;
     height: 3px;
-    background: blue;       
+    transition: all 0.2s ease-in-out;       
   }   
   
  .first[aria-expended="true"] {
-       transform: rotate(45deg) translateX(5px) translateY(5px);
+       transform: rotate(45deg) translateX(15%) translateY(330%);
+   transition: all 0.2s ease-in-out;
      }
  .second[aria-expended="true"] {
        opacity: 0;
      }
  .third[aria-expended="true"] {
-       transform: rotate(-45deg) translateX(7px) translateY(-10px);
+       transform: rotate(-45deg) translateX(19%) translateY(-330%);
+   transition: all 0.2s ease-in-out;
      }
   
   .nav {
