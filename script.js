@@ -38,6 +38,7 @@ navToggle.addEventListener("click", () => {
   }
 });
 
+/*scroll transition*/
 gsap.to(".panel:not(:last-child)", {
   yPercent: -100, 
   ease: "none",
@@ -51,8 +52,19 @@ gsap.to(".panel:not(:last-child)", {
   }
 });
 
-
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
+
+/*little bar animation*/
+gsap.from(".propo", {
+  scrollTrigger: ".propo",
+  autoAlpha: 0,
+  xPercent: -20,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stager: 0.1,
+});
+
+
 
 /*Hello swing on load*/
 const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability.
