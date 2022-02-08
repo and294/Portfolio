@@ -55,10 +55,10 @@ gsap.to(".panel:not(:last-child)", {
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
 
 /*little bar animation*/
-gsap.from("hr", {
+gsap.from(".hr", {
   scrollTrigger: {
-  trigger: "hr",
-    toggleActions: "restart none reverse none",
+  trigger: ".hr",
+    toggleActions: "restart none none none",
   },
   autoAlpha: 0,
   xPercent: -200,
