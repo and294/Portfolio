@@ -55,15 +55,30 @@ gsap.to(".panel:not(:last-child)", {
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
 
 /*little bar animation*/
-gsap.from(".propo", {
-  scrollTrigger: ".propo",
+gsap.from("hr", {
+  scrollTrigger: {
+  trigger: "hr",
+    toggleActions: "restart none none none",
+  },
   autoAlpha: 0,
-  xPercent: -20,
+  xPercent: -200,
   ease: Power2.easeInOut,
   duration: 1,
   stager: 0.1,
 });
 
+gsap.from("hr", {
+  scrollTrigger: {
+  trigger: "hr",
+  toggleActions: "restart reverse none none",
+  start: "bottom 50%"
+  },
+  autoAlpha: 0,
+  xPercent: 200,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stager: 0.1,
+});
 
 
 /*Hello swing on load*/
