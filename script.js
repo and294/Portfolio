@@ -39,7 +39,7 @@ navToggle.addEventListener("click", () => {
 });
 
 /*scroll transition*/
-gsap.to(".panel:not(:last-child)", {
+/*gsap.to(".panel:not(:last-child)", {
   yPercent: -100, 
   ease: "none",
   stagger: 0.5,
@@ -50,7 +50,7 @@ gsap.to(".panel:not(:last-child)", {
     scrub: true,
     pin: true
   }
-});
+});*/
 
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
 
