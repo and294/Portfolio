@@ -507,13 +507,13 @@ nav a.active {
   }   
   
  .first[aria-expended="true"] {
-       transform: rotate(45deg);
+       transform: rotate(45deg) translateX(5px) translateY(5px);
      }
  .second[aria-expended="true"] {
        opacity: 0;
      }
  .third[aria-expended="true"] {
-       transform: rotate(-45deg);
+       transform: rotate(-45deg) translateX(7px) translateY(-10px);
      }
   
   .nav {

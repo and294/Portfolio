@@ -24,17 +24,23 @@ window.addEventListener("scroll", () => {
 /*hide nav on phone and tablet*/
 const primaryNav = document.querySelector(".nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
-const burger = document.querySelectorAll(".burger")
+const burger = document.querySelector(".first")
+const burgertwo = document.querySelector(".second")
+const burgerthree = document.querySelector(".third")
 
 navToggle.addEventListener("click", () => {
   const visibility = primaryNav.getAttribute("data-visible");
   if (visibility === "false") {
     primaryNav.setAttribute("data-visible", "true");
     burger.setAttribute("aria-expended", "true");
+    burgertwo.setAttribute("aria-expended", "true");
+    burgerthree.setAttribute("aria-expended", "true");
     
   } else {
     primaryNav.setAttribute("data-visible", "false");
     burger.setAttribute("aria-expended", "false");
+    burgertwo.setAttribute("aria-expended", "false");
+    burgerthree.setAttribute("aria-expended", "false");
   }
 });
 
