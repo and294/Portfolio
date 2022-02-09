@@ -64,7 +64,7 @@ gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});*/
 gsap.from(".hr", {
   scrollTrigger: {
   trigger: ".hr",
-    toggleActions: "restart none none none",
+    toggleActions: "restart restart none none",
   },
   autoAlpha: 0,
   xPercent: -200,
