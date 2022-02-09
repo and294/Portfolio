@@ -259,6 +259,9 @@ nav a.active {
   width: 40%;
 }
 .bar:nth-child(7) span {
+  width: 50%;
+}
+.bar:nth-child(8) span {
   width: 30%;
 }
 
@@ -302,6 +305,9 @@ nav a.active {
   left: 40%;
 }
 .bar:nth-child(7) abbr {
+  left: 50%;
+}
+.bar:nth-child(8) abbr {
   left: 30%;
 }
 
