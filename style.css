@@ -25,6 +25,10 @@ body {
   color: black;
 }
 
+h1, p, h2 {
+  color: black;
+}
+
 .text {
   font-size: 20px;
 }
