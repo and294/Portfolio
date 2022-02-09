@@ -156,7 +156,7 @@ gsap.from(".skill", {
 
 gsap.from(".bar abbr", {
   scrollTrigger: ".bar",
-  left: 0,
+  left: -15,
   ease: Power2.easeInOut,
   duration: 3,
   stager: 0.1,
