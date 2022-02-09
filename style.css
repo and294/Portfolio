@@ -185,8 +185,12 @@ nav a.active {
     rgba(189, 150, 253, 0.2) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  overflow: hidden;
   backdrop-filter: blur(5px);
+}
+
+.service {
+  text-align: center;
+  color: rgb(27, 50, 58);
 }
 
 /*skills*/
@@ -483,7 +487,6 @@ background: radial-gradient(circle, rgba(255,195,235,1) 62%, rgba(255,249,253,1)
 
   .bio {
     width: 50vw;
-    height: auto;
     text-align: justify;
     align-self: end;
     margin-right: 70px;
@@ -499,6 +502,8 @@ grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(5, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .discover { grid-area: 1 / 1 / 2 / 2; }
