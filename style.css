@@ -333,8 +333,8 @@ background: radial-gradient(circle, rgba(255,195,235,1) 62%, rgba(255,249,253,1)
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 
 .Protiles img {
@@ -492,6 +492,18 @@ background: radial-gradient(circle, rgba(255,195,235,1) 62%, rgba(255,249,253,1)
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
+  
+  .serviceGrid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.discover { grid-area: 1 / 1 / 2 / 2; }
+.design { grid-area: 2 / 2 / 3 / 3; }
+.code { grid-area: 3 / 1 / 4 / 2; } 
 
   #competence {
     background: white;
