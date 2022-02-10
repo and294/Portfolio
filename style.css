@@ -191,6 +191,7 @@ nav a.active {
 .service {
   text-align: center;
   color: rgb(27, 50, 58);
+  
 }
 
 .serviceTitle {
@@ -506,7 +507,7 @@ grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(5, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
-    padding-left: 50px;
+    padding-left: 180px;
     padding-right: 50px;
 }
 
@@ -649,6 +650,15 @@ grid-row-gap: 0px;
     border-bottom-left-radius: 10px 10px;
     transition: 1s ease-out;
   }
+  
+  .serviceGrid {
+    width: 80vw;
+    text-align: justify;
+    align-self: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
   #competence {
     padding-top: 110px;
   }
