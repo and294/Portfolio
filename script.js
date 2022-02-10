@@ -143,6 +143,7 @@ gsap.from(".bio", {
 /*Tilt effect on bio*/
 VanillaTilt.init(document.querySelector(".bio"), {
   glare: true,
+ 
 });
 
 /*Tilt effect on loupe*/
