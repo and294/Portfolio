@@ -193,7 +193,9 @@ nav a.active {
   color: rgb(27, 50, 58);
 }
 
-
+.serviceTitle {
+  text-align: center;
+}
 
 /*skills*/
 #competence {
@@ -305,25 +307,25 @@ background: radial-gradient(circle, rgba(255,195,235,1) 62%, rgba(255,249,253,1)
   left: 60%;
 }
 .bar:nth-child(2) abbr {
-  left: 60%;
+  left: 50%;
 }
 .bar:nth-child(3) abbr {
-  left: 70%;
+  left: 60%;
 }
 .bar:nth-child(4) abbr {
-  left: 50%;
-}
-.bar:nth-child(5) abbr {
-  left: 80%;
-}
-.bar:nth-child(6) abbr {
   left: 40%;
 }
+.bar:nth-child(5) abbr {
+  left: 70%;
+}
+.bar:nth-child(6) abbr {
+  left: 30%;
+}
 .bar:nth-child(7) abbr {
-  left: 50%;
+  left: 40%;
 }
 .bar:nth-child(8) abbr {
-  left: 30%;
+  left: 20%;
 }
 
 /*projects*/
@@ -516,6 +518,16 @@ grid-row-gap: 0px;
     background: white;
      margin-top: 500px;
   }
+  .wrap {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 50px;
+grid-row-gap: 0px;
+}
+
+.column1 { grid-area: 1 / 1 / 2 / 2; }
+.column2 { grid-area: 1 / 2 / 2 / 3; } 
   
   #realisation {
     margin-top: 100px;

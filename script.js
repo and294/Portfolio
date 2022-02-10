@@ -179,7 +179,7 @@ gsap.from(".tile", {
     start: "top 80%",
   },
   y: -50,
-  scale: 1.3,
+  scale: 1.1,
   duration: 0.5,
   stager: { eact: 0.5 },
 });
