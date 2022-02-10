@@ -140,6 +140,15 @@ gsap.from(".bio", {
   delay: 0.5,
   stager: 0.1,
 });
+/*Tilt effect on bio*/
+VanillaTilt.init(document.querySelector(".bio"), {
+  glare: true,
+});
+
+/*Tilt effect on loupe*/
+VanillaTilt.init(document.querySelector(".loupe"), {
+  glare: true,
+});
 
 /*Skill slide in*/
 /*Who am I slide in*/
@@ -184,6 +193,3 @@ gsap.from(".tile", {
   stager: { eact: 0.5 },
 });
 
-VanillaTilt.init(document.querySelector(".bio"), {
-  glare: true,
-});
