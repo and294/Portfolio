@@ -159,10 +159,10 @@ gsap.from(".service", {
   duration: 1,
 });
 
-/*loupe slide in*/
-gsap.from(".serviceTitle", ".", {
+/*discover slide in*/
+gsap.from(".discoverEntrance", {
   scrollTrigger: {
-    trigger: ".discover",
+    trigger: ".discoverEntrance",
     toggleActions: "restart none none none",
     start: "top 80%",
   },
@@ -170,7 +170,35 @@ gsap.from(".serviceTitle", ".", {
   yPercent: 20,
   ease: Power2.easeInOut,
   duration: 1,
-  stagger: 0.2,
+  stagger: 0.7,
+});
+
+/*design slide in*/
+gsap.from(".designEntrance", {
+  scrollTrigger: {
+    trigger: ".designEntrance",
+    toggleActions: "restart none none none",
+    start: "top 60%",
+  },
+  autoAlpha: 0,
+  yPercent: 20,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stagger: 0.7,
+});
+
+/*code slide in*/
+gsap.from(".codeEntrance", {
+  scrollTrigger: {
+    trigger: ".codeEntrance",
+    toggleActions: "restart none none none",
+    start: "top 40%",
+  },
+  autoAlpha: 0,
+  yPercent: 20,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stagger: 0.7,
 });
 
 
@@ -190,7 +218,6 @@ VanillaTilt.init(document.querySelector(".codeIcon"), {
 
 
 /*Skill slide in*/
-/*Who am I slide in*/
 gsap.from(".skill", {
   scrollTrigger: ".skill",
   autoAlpha: 0,
@@ -201,7 +228,6 @@ gsap.from(".skill", {
 });
 
 /*Skill bars animation*/
-
 gsap.from(".bar abbr", {
   scrollTrigger: ".bar",
   left: -15,
