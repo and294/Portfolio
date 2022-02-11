@@ -100,6 +100,7 @@ gsap.from(".name", {
 });
 
 gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1 });
+
 /*Font end slide in*/
 gsap.from(".frontend", {
   scrollTrigger: ".frontend",
@@ -146,18 +147,32 @@ VanillaTilt.init(document.querySelector(".bio"), {
  
 });
 
+
+/*What can I do slide in*/
+var rule = CSSRulePlugin.getRule(".service:after");
+
+gsap.from(".service", {
+  scrollTrigger: ".service",
+  opacity: 0,
+  y: -50,
+  duration: 1,
+});
+
+
 /*Tilt effect on loupe*/
 VanillaTilt.init(document.querySelector(".loupeIcon"), {
   glare: true,
 });
 /*Tilt effect on hammer*/
-VanillaTilt.init(document.querySelector(".loupeIcon"), {
+VanillaTilt.init(document.querySelector(".hammerIcon"), {
   glare: true,
 });
 /*Tilt effect on code*/
-VanillaTilt.init(document.querySelector(".loupeIcon"), {
+VanillaTilt.init(document.querySelector(".codeIcon"), {
   glare: true,
 });
+
+
 
 /*Skill slide in*/
 /*Who am I slide in*/
@@ -199,6 +214,7 @@ gsap.from(".tile", {
   y: -50,
   scale: 1.1,
   duration: 0.5,
+  opacity:0,
   stager: { eact: 0.5 },
 });
 
