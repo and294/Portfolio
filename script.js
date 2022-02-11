@@ -74,7 +74,6 @@ gsap.from(".hr", {
 });
 
 
-
 /*Hello swing on load*/
 const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability.
 
@@ -121,6 +120,9 @@ gsap.from(".photo", {
   stager: 0.1,
 });
 
+
+
+
 /*Who am I slide in*/
 gsap.from(".propo", {
   scrollTrigger: ".propo",
@@ -144,7 +146,6 @@ gsap.from(".bio", {
 /*Tilt effect on bio*/
 VanillaTilt.init(document.querySelector(".bio"), {
   glare: true,
- 
 });
 
 
@@ -156,6 +157,20 @@ gsap.from(".service", {
   opacity: 0,
   y: -50,
   duration: 1,
+});
+
+/*loupe slide in*/
+gsap.from(".serviceTitle", ".", {
+  scrollTrigger: {
+    trigger: ".discover",
+    toggleActions: "restart none none none",
+    start: "top 80%",
+  },
+  autoAlpha: 0,
+  yPercent: 20,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stagger: 0.2,
 });
 
 
