@@ -73,6 +73,16 @@ gsap.from(".hr", {
   stager: 0.1,
 });
 
+/*Intro div animation on load*/
+gsap.from(".intro", {
+  scrollTrigger: ".intro",
+  autoAlpha: 0,
+  height: 2000,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stager: 0.1,
+});
+
 
 /*Hello swing on load*/
 const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability.
