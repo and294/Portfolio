@@ -147,7 +147,15 @@ VanillaTilt.init(document.querySelector(".bio"), {
 });
 
 /*Tilt effect on loupe*/
-VanillaTilt.init(document.querySelector(".loupe"), {
+VanillaTilt.init(document.querySelector(".loupeIcon"), {
+  glare: true,
+});
+/*Tilt effect on hammer*/
+VanillaTilt.init(document.querySelector(".loupeIcon"), {
+  glare: true,
+});
+/*Tilt effect on code*/
+VanillaTilt.init(document.querySelector(".loupeIcon"), {
   glare: true,
 });
 
