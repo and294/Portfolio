@@ -151,7 +151,7 @@ nav a.active {
   color: #6196a9;
   /*-webkit-text-stroke: 0.1vw rgb(20, 37, 43);*/
   overflow: hidden;
-  animation: animate 10s linear infinite;
+  animation: animate 10s linear /*infinite*/;
 }
 
 @keyframes animate {

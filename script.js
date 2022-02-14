@@ -212,20 +212,6 @@ gsap.from(".codeEntrance", {
 });
 
 
-/*Tilt effect on loupe*/
-VanillaTilt.init(document.querySelector(".loupeIcon"), {
-  glare: true,
-});
-/*Tilt effect on hammer*/
-VanillaTilt.init(document.querySelector(".hammerIcon"), {
-  glare: true,
-});
-/*Tilt effect on code*/
-VanillaTilt.init(document.querySelector(".codeIcon"), {
-  glare: true,
-});
-
-
 
 /*Skill slide in*/
 gsap.from(".skill", {
