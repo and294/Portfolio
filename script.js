@@ -60,9 +60,11 @@ navToggle.addEventListener("click", () => {
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});*/
 
 /*little bar animation*/
-gsap.from(".hr", {
+let underline = querySelectorAll('hr');
+
+gsap.from(underline, {
   scrollTrigger: {
-    trigger: ".hr",
+    trigger: underline,
     toggleActions: "restart restart none none",
   },
   autoAlpha: 0,
@@ -155,7 +157,10 @@ VanillaTilt.init(document.querySelector(".bio"), {
 
 /*What can I do slide in*/
 gsap.from(".service", {
-  scrollTrigger: ".service",
+  scrollTrigger: {
+    trigger: ".service",
+    start: "top 80%",
+  },
   opacity: 0,
   y: -50,
   duration: 1,
@@ -204,18 +209,19 @@ gsap.from(".codeEntrance", {
 });
 
 /*Skill slide in*/
-
 gsap.from(".skill", {
   scrollTrigger: {
-    trigger: ".codeEntrance",
-    start: "top 80%",
+    trigger: ".skill",
+    start: "top 90%",
   },
   opacity: 0,
   y: -50,
   duration: 1,
 });
 /*Skill bars animation*/
-gsap.from(".barEntrance", {
+let bars = document.querySelectorAll('.barEntrance')
+
+gsap.from(bars, {
   scrollTrigger: {
     trigger:".bar",
     start: "top 90%",
@@ -224,7 +230,7 @@ gsap.from(".barEntrance", {
   opacity: 0,
   ease: Power2.easeInOut,
   duration: 1,
-  stager: 0.9,
+  stager: {each: 0.9,},
 });
 
 gsap.from(".bar abbr", {
@@ -241,6 +247,17 @@ gsap.from(".bar span", {
   ease: Power2.easeInOut,
   duration: 3,
   stager: 0.1,
+});
+
+/*Project slide in*/
+gsap.from(".project", {
+  scrollTrigger: {
+    trigger: ".project",
+    start: "top 90%",
+  },
+  opacity: 0,
+  y: -50,
+  duration: 1,
 });
 
 /*Grid entrance*/
