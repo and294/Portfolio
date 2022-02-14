@@ -178,13 +178,27 @@ gsap.from(".discoverEntrance", {
   yPercent: 20,
   ease: Power2.easeInOut,
   duration: 1,
-  stagger: 0.7,
+  stagger: 0.5,
 });
 
 /*design slide in*/
 gsap.from(".designEntrance", {
   scrollTrigger: {
     trigger: ".designEntrance",
+    start: "top 70%",
+  },
+  autoAlpha: 0,
+  opacity: 0,
+  yPercent: 20,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stagger: 0.5,
+});
+
+/*code slide in*/
+gsap.from(".codeEntrance", {
+  scrollTrigger: {
+    trigger: ".codeEntrance",
     start: "top 60%",
   },
   autoAlpha: 0,
@@ -192,21 +206,7 @@ gsap.from(".designEntrance", {
   yPercent: 20,
   ease: Power2.easeInOut,
   duration: 1,
-  stagger: 0.7,
-});
-
-/*code slide in*/
-gsap.from(".codeEntrance", {
-  scrollTrigger: {
-    trigger: ".codeEntrance",
-    start: "top 40%",
-  },
-  autoAlpha: 0,
-  opacity: 0,
-  yPercent: 20,
-  ease: Power2.easeInOut,
-  duration: 1,
-  stagger: 0.7,
+  stagger: 0.5,
 });
 
 
@@ -214,7 +214,10 @@ gsap.from(".codeEntrance", {
 /*Skill slide in*/
 
 gsap.from(".skill", {
-  scrollTrigger: ".skill",
+  scrollTrigger: {
+    trigger: ".codeEntrance",
+    start: "top 80%",
+  },
   opacity: 0,
   y: -50,
   duration: 1,
