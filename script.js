@@ -60,11 +60,10 @@ navToggle.addEventListener("click", () => {
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});*/
 
 /*little bar animation*/
-let underline = querySelectorAll('hr');
 
-gsap.from(underline, {
+gsap.from("hr", {
   scrollTrigger: {
-    trigger: underline,
+    trigger: "hr",
     toggleActions: "restart restart none none",
   },
   autoAlpha: 0,
