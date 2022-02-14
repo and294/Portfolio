@@ -24,9 +24,9 @@ window.addEventListener("scroll", () => {
 /*hide nav on phone and tablet*/
 const primaryNav = document.querySelector(".nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
-const burger = document.querySelector(".first")
-const burgertwo = document.querySelector(".second")
-const burgerthree = document.querySelector(".third")
+const burger = document.querySelector(".first");
+const burgertwo = document.querySelector(".second");
+const burgerthree = document.querySelector(".third");
 
 navToggle.addEventListener("click", () => {
   const visibility = primaryNav.getAttribute("data-visible");
@@ -35,7 +35,6 @@ navToggle.addEventListener("click", () => {
     burger.setAttribute("aria-expended", "true");
     burgertwo.setAttribute("aria-expended", "true");
     burgerthree.setAttribute("aria-expended", "true");
-    
   } else {
     primaryNav.setAttribute("data-visible", "false");
     burger.setAttribute("aria-expended", "false");
@@ -63,7 +62,7 @@ gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});*/
 /*little bar animation*/
 gsap.from(".hr", {
   scrollTrigger: {
-  trigger: ".hr",
+    trigger: ".hr",
     toggleActions: "restart restart none none",
   },
   autoAlpha: 0,
@@ -82,7 +81,6 @@ gsap.from(".intro", {
   duration: 1,
   stager: 0.1,
 });
-
 
 /*Hello swing on load*/
 const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability.
@@ -130,9 +128,6 @@ gsap.from(".photo", {
   stager: 0.1,
 });
 
-
-
-
 /*Who am I slide in*/
 gsap.from(".propo", {
   scrollTrigger: ".propo",
@@ -157,7 +152,6 @@ gsap.from(".bio", {
 VanillaTilt.init(document.querySelector(".bio"), {
   glare: true,
 });
-
 
 /*What can I do slide in*/
 gsap.from(".service", {
@@ -209,8 +203,6 @@ gsap.from(".codeEntrance", {
   stagger: 0.5,
 });
 
-
-
 /*Skill slide in*/
 
 gsap.from(".skill", {
@@ -223,6 +215,18 @@ gsap.from(".skill", {
   duration: 1,
 });
 /*Skill bars animation*/
+gsap.from(".barEntrance", {
+  scrollTrigger: {
+    trigger:".bar",
+    start: "top 90%",
+  },
+  y: 15,
+  opacity: 0,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stager: 0.9,
+});
+
 gsap.from(".bar abbr", {
   scrollTrigger: ".bar",
   left: -15,
@@ -250,7 +254,6 @@ gsap.from(".tile", {
   y: -50,
   scale: 1.1,
   duration: 0.5,
-  opacity:0,
+  opacity: 0,
   stager: { eact: 0.5 },
 });
-
