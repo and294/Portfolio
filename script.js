@@ -77,7 +77,7 @@ gsap.from(".hr", {
 gsap.from(".intro", {
   scrollTrigger: ".intro",
   autoAlpha: 0,
-  height: 2000,
+  height: 1000,
   ease: Power2.easeInOut,
   duration: 1,
   stager: 0.1,
@@ -160,8 +160,6 @@ VanillaTilt.init(document.querySelector(".bio"), {
 
 
 /*What can I do slide in*/
-var rule = CSSRulePlugin.getRule(".service:after");
-
 gsap.from(".service", {
   scrollTrigger: ".service",
   opacity: 0,
@@ -214,15 +212,13 @@ gsap.from(".codeEntrance", {
 
 
 /*Skill slide in*/
+
 gsap.from(".skill", {
   scrollTrigger: ".skill",
-  autoAlpha: 0,
-  yPercent: 50,
-  ease: Power2.easeInOut,
+  opacity: 0,
+  y: -50,
   duration: 1,
-  stager: 0.1,
 });
-
 /*Skill bars animation*/
 gsap.from(".bar abbr", {
   scrollTrigger: ".bar",
