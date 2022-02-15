@@ -102,6 +102,17 @@ gsap.from(".intro", {
   stager: 0.1,
 });
 
+/*Photo scale*/
+gsap.from(".moi", {
+  scrollTrigger: ".moi",
+  autoAlpha: 0,
+  scale: 1.5,
+  y: -10,
+  ease: Power2.easeInOut,
+  duration: 1.5,
+  stager: 0.1,
+});
+
 /*Hello swing on load*/
 const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability.
 

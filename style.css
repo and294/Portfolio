@@ -105,10 +105,12 @@ nav a.active {
 }
 
 .moi {
-  height: 1000px;
+  height: 900px;
   position: absolute;
   overflow: hidden;
-  right: -250px;
+  right: -210px;
+  top: -20px;
+  opacity: 20%;
 }
 
 /*I'm Andrea*/
