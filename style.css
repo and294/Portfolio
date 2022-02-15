@@ -418,12 +418,7 @@ nav a.active {
   );
   -webkit-clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
-  
 }
-
-
-
-
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
@@ -511,7 +506,7 @@ nav a.active {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
   }
-  
+
   .service {
     margin-top: 70px;
   }
@@ -546,7 +541,7 @@ nav a.active {
     left: 2em;
     justify-self: center;
   }
-  
+
   .hammerIcon {
     position: absolute;
     width: 150px;
@@ -556,7 +551,7 @@ nav a.active {
     left: 2em;
     justify-self: center;
   }
-  
+
   .codeIcon {
     position: absolute;
     width: 150px;
@@ -599,11 +594,6 @@ nav a.active {
     transition: 0.3s;
   }
 }
-
-
-
-
-
 
 /*Phone & Tablet*/
 @media screen and (max-width: 1023px) {
@@ -729,7 +719,7 @@ nav a.active {
     opacity: 0.5;
     justify-self: center;
   }
-  
+
   .hammerIcon {
     position: absolute;
     width: 120px;
@@ -740,7 +730,7 @@ nav a.active {
     opacity: 0.5;
     justify-self: center;
   }
-  
+
   .codeIcon {
     position: absolute;
     width: 120px;
