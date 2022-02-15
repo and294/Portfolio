@@ -84,7 +84,7 @@ nav a.active {
 
 /*Hello page*/
 .intro {
-  background: rgb(20, 37, 43);
+  background: rgba(20, 37, 43);
   background: linear-gradient(
     90deg,
     rgba(20, 37, 43, 1) 0%,
@@ -102,6 +102,13 @@ nav a.active {
   color: white;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
+}
+
+.moi {
+  height: 1000px;
+  position: absolute;
+  overflow: hidden;
+  right: -250px;
 }
 
 /*I'm Andrea*/
