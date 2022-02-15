@@ -61,16 +61,35 @@ gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});*/
 
 /*little bar animation*/
 
-gsap.from("hr", {
+gsap.from(".hr1", {
   scrollTrigger: {
-    trigger: "hr",
+    trigger: ".hr1",
     toggleActions: "restart restart none none",
   },
   autoAlpha: 0,
   xPercent: -200,
   ease: Power2.easeInOut,
   duration: 1,
-  stager: 0.1,
+});
+gsap.from(".hr2", {
+  scrollTrigger: {
+    trigger: ".hr2",
+    toggleActions: "restart restart none none",
+  },
+  autoAlpha: 0,
+  xPercent: -200,
+  ease: Power2.easeInOut,
+  duration: 1,
+});
+gsap.from(".hr3", {
+  scrollTrigger: {
+    trigger: ".hr3",
+    toggleActions: "restart restart none none",
+  },
+  autoAlpha: 0,
+  xPercent: -200,
+  ease: Power2.easeInOut,
+  duration: 1,
 });
 
 /*Intro div animation on load*/
@@ -133,7 +152,7 @@ gsap.from(".photo", {
 gsap.from(".propo", {
   scrollTrigger: ".propo",
   autoAlpha: 0,
-  xPercent: -20,
+  yPercent: 50,
   ease: Power2.easeInOut,
   duration: 1,
   stager: 0.1,
@@ -161,7 +180,7 @@ gsap.from(".service", {
     start: "top 80%",
   },
   opacity: 0,
-  y: -50,
+  y: 50,
   duration: 1,
 });
 
@@ -214,22 +233,22 @@ gsap.from(".skill", {
     start: "top 90%",
   },
   opacity: 0,
-  y: -50,
+  y: 50,
   duration: 1,
 });
 /*Skill bars animation*/
-let bars = document.querySelectorAll('.barEntrance')
+let bars = document.querySelectorAll(".barEntrance");
 
 gsap.from(bars, {
   scrollTrigger: {
-    trigger:".bar",
+    trigger: ".bar",
     start: "top 90%",
   },
   y: 15,
   opacity: 0,
   ease: Power2.easeInOut,
   duration: 1,
-  stager: {each: 0.9,},
+  stager: { each: 0.9 },
 });
 
 gsap.from(".bar abbr", {
@@ -255,7 +274,7 @@ gsap.from(".project", {
     start: "top 90%",
   },
   opacity: 0,
-  y: -50,
+  y: 50,
   duration: 1,
 });
 
