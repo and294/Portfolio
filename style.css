@@ -22,7 +22,7 @@ body {
 
 /*Set default font size for titles and text*/
 .title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   color: black;
 }
@@ -30,7 +30,7 @@ body {
 h1,
 p,
 h2 {
-  font-family: 'Quattrocento', serif;
+  font-family: "Quattrocento", serif;
   color: black;
 }
 
@@ -117,7 +117,7 @@ nav a.active {
 
 /*I'm Andrea*/
 .name {
-  font-family: 'Bodoni Moda', serif;
+  font-family: "Bodoni Moda", serif;
   font-size: 10em;
   color: white;
 }
@@ -144,7 +144,7 @@ nav a.active {
 }
 
 .frontend {
-  font-family: 'Quattrocento', serif;
+  font-family: "Quattrocento", serif;
   font-size: 40px;
   color: rgb(20, 37, 43);
   align-self: center;
@@ -179,12 +179,10 @@ nav a.active {
 }
 
 .arrow {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 2px;
+  font-family: "Oswald", sans-serif;
   color: white;
   align-self: center;
   margin-top: 100px;
-  
 }
 
 /*Who am I ? presentation*/
@@ -275,7 +273,7 @@ nav a.active {
   background: linear-gradient(
     90deg,
     rgba(97, 150, 169, 1) 0%,
-    rgba(189, 150, 253, 1) 100%  
+    rgba(189, 150, 253, 1) 100%
   );
   border-radius: 10px;
 }
@@ -454,12 +452,13 @@ nav a.active {
     height: 100%;
     top: 0;
     border-radius: 0%;
-    background: rgb(27, 50, 58);
+    /*background: rgb(27, 50, 58);
     background: linear-gradient(
       90deg,
       rgba(27, 50, 58, 0.1) 0%,
       rgba(97, 150, 169, 0.1) 100%
-    );
+    );*/
+    background: none;
   }
 
   .hello {
@@ -471,6 +470,13 @@ nav a.active {
     width: 100vw;
     align-self: center;
     text-align: center;
+    margin-top: -2px;
+    margin-bottom: 5px;
+    font-weight: 10px;
+  }
+
+  .frontend {
+    margin-bottom: 5em;
   }
 
   #presentation {
