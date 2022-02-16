@@ -178,6 +178,12 @@ nav a.active {
   }
 }
 
+.arrow {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  align-self: center;
+}
+
 /*Who am I ? presentation*/
 #presentation {
   background-color: white;
