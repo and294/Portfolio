@@ -159,6 +159,15 @@ gsap.from(".photo", {
   stager: 0.1,
 });
 
+/*Scroll down Arrow*/
+gsap.from(".arrow", {
+  scrollTrigger: ".arrow",
+  autoAlpha: 0,
+  yPercent: -100,
+  ease: Power2.easeInOut,
+  duration: 1,
+  stager: 0.1,
+});
 /*Who am I slide in*/
 gsap.from(".propo", {
   scrollTrigger: ".propo",
