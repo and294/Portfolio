@@ -471,7 +471,7 @@ nav a.active {
     align-self: center;
     text-align: center;
     margin-top: -2px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-weight: 10px;
   }
 
@@ -693,6 +693,7 @@ nav a.active {
 
   .frontend {
     font-size: 25px;
+    margin-bottom: 6em;
   }
 
   .photo {

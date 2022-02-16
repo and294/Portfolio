@@ -165,6 +165,7 @@ gsap.from(".arrow", {
   autoAlpha: 0,
   yPercent: -100,
   ease: Power2.easeInOut,
+  delay: 1.5,
   duration: 1,
   stager: 0.1,
 });
