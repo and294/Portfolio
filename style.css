@@ -180,9 +180,10 @@ nav a.active {
 
 .arrow {
   font-family: 'Oswald', sans-serif;
+  font-weight: 2px;
   color: white;
   align-self: center;
-  padding-bottom: 5px;
+  margin-top: 100px;
   
 }
 
