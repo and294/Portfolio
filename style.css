@@ -22,6 +22,7 @@ body {
 
 /*Set default font size for titles and text*/
 .title {
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   color: black;
 }
@@ -29,6 +30,7 @@ body {
 h1,
 p,
 h2 {
+  font-family: 'Quattrocento', serif;
   color: black;
 }
 
@@ -84,7 +86,7 @@ nav a.active {
 
 /*Hello page*/
 .intro {
-  background: rgba(20, 37, 43);
+  /*background: rgba(20, 37, 43);
   background: linear-gradient(
     90deg,
     rgba(20, 37, 43, 1) 0%,
@@ -92,7 +94,8 @@ nav a.active {
     rgba(27, 50, 58, 1) 50%,
     rgba(27, 50, 58, 1) 85%,
     rgba(20, 37, 43, 1) 100%
-  );
+  );*/
+  background: black;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -115,7 +118,8 @@ nav a.active {
 
 /*I'm Andrea*/
 .name {
-  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 90px;
   color: white;
 }
 
@@ -141,6 +145,7 @@ nav a.active {
 }
 
 .frontend {
+  font-family: 'Quattrocento', serif;
   font-size: 40px;
   color: rgb(20, 37, 43);
   align-self: center;
