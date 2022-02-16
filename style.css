@@ -117,8 +117,8 @@ nav a.active {
 
 /*I'm Andrea*/
 .name {
-  font-family: 'Oswald', sans-serif;
-  font-size: 90px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 10em;
   color: white;
 }
 
@@ -182,7 +182,8 @@ nav a.active {
   font-family: 'Oswald', sans-serif;
   color: white;
   align-self: center;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
+  
 }
 
 /*Who am I ? presentation*/
