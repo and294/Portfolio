@@ -187,11 +187,12 @@ nav a.active {
 }
 
 @keyframes float {
-  0%
-   {
+  0%, 
+  100% {
     transform: translateY(-10%);
   }
-  100% {
+  60%,
+  90% {
     transform: translateY(10%);
   }
 }
