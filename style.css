@@ -484,7 +484,7 @@ nav a.active {
     text-align: center;
     margin-top: -2px;
     margin-bottom: 20px;
-    font-weight: 10px;
+    font-weight: 1;
   }
 
   .frontend {
@@ -703,6 +703,7 @@ nav a.active {
   }
 
   .name {
+    font-weight: 1;
     font-size: 50px;
     width: 100vw;
     align-self: center;
