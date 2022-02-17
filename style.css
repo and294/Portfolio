@@ -268,7 +268,7 @@ nav a.active {
   width: 100%;
   /*height: 10px;*/
   height: 25px;
-  background-color: #000;
+  background-color: #375561;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -287,6 +287,8 @@ nav a.active {
     rgba(97, 150, 169, 1) 0%,
     rgba(189, 150, 253, 1) 100%
   );
+  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(255, 255, 255, 0.85); 
+box-shadow: inset 0px 0px 3px 2px rgba(255, 255, 255, 0.85);
   border-radius: 10px;
 }
 
