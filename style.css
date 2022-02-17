@@ -622,7 +622,7 @@ nav a.active {
   }
 
   #realisation {
-    margin-top: 100px;
+    margin-top: 300px;
   }
 
   .projectImg {
@@ -633,7 +633,13 @@ nav a.active {
     position: relative;
     transition: 0.3s;
   }
+  
+  #inTouch {
+    margin-top: 300px;
+  }
 }
+
+
 
 /*Phone & Tablet*/
 @media screen and (max-width: 1023px) {
@@ -784,9 +790,20 @@ nav a.active {
   }
 
   #competence {
-    padding-top: 110px;
+    margin-top: 150px;
+  }
+  
+  #realisation {
+    margin-top: 150px;
+  }
+  
+  #inTouch {
+    margin-top: 150px;
   }
 }
+
+
+
 
 /*Hello neon animation*/
 .hello {
