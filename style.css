@@ -183,6 +183,17 @@ nav a.active {
   color: white;
   align-self: center;
   margin-top: 100px;
+  animation: float 1s linear infinite;
+}
+
+@keyframes float {
+  0%
+   {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
 }
 
 /*Who am I ? presentation*/
