@@ -74,6 +74,7 @@ gsap.from(".hr1", {
 gsap.from(".hr2", {
   scrollTrigger: {
     trigger: ".hr2",
+    start: "top 95%",
     toggleActions: "restart restart none none",
   },
   autoAlpha: 0,
@@ -84,6 +85,7 @@ gsap.from(".hr2", {
 gsap.from(".hr3", {
   scrollTrigger: {
     trigger: ".hr3",
+    start: "top 95%",
     toggleActions: "restart restart none none",
   },
   autoAlpha: 0,
