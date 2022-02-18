@@ -86,20 +86,19 @@ nav a.active {
 
 /*Hello page*/
 .intro {
-  /*background: url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950") no-repeat center center fixed; 
+  background: linear-gradient(
+    90deg,
+    rgba(20, 37, 43, 0.8) 0%,
+    rgba(27, 50, 58, 0.8) 15%,
+    rgba(27, 50, 58, 0.8) 50%,
+    rgba(27, 50, 58, 0.8) 85%,
+    rgba(20, 37, 43, 0.8) 100%
+  ),
+    url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
-  background: rgba(20, 37, 43, 1);
-  background: linear-gradient(
-    90deg,
-    rgba(20, 37, 43, 1) 0%,
-    rgba(27, 50, 58, 1) 15%,
-    rgba(27, 50, 58, 1) 50%,
-    rgba(27, 50, 58, 1) 85%,
-    rgba(20, 37, 43, 1) 100%
-  );
+  background-size: cover;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -111,12 +110,6 @@ nav a.active {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
 }
 
-.sea {
-  position: absolute;
-  overflow: hidden;
-  top: -20px;
-  opacity: 20%;
-}
 
 /*I'm Andrea*/
 .name {
@@ -442,19 +435,19 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
   justify-content: center;
   background: linear-gradient(
     90deg,
-    rgba(20, 37, 43, 1) 0%,
-    rgba(27, 50, 58, 1) 15%,
-    rgba(27, 50, 58, 1) 50%,
-    rgba(27, 50, 58, 1) 85%,
-    rgba(20, 37, 43, 1) 100%
-  );
+    rgba(20, 37, 43, 0.8) 0%,
+    rgba(27, 50, 58, 0.8) 15%,
+    rgba(27, 50, 58, 0.8) 50%,
+    rgba(27, 50, 58, 0.8) 85%,
+    rgba(20, 37, 43, 0.8) 100%
+  ),
+    url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
-}
-.seaInTouch {
-  position: absolute;
-  overflow: hidden;
-  opacity: 20%;
 }
 
 
