@@ -115,17 +115,17 @@ gsap.from(".hello", {
 });
 
 /*Name slide in*/
-var rule = CSSRulePlugin.getRule(".name:after");
+/*var rule = CSSRulePlugin.getRule(".name:after");*/
 
 gsap.from(".name", {
   scrollTrigger: ".name",
   opacity: 0,
   y: -50,
-  duration: 1,
+  duration: 1.5,
 });
 
-gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1 });
-
+/*gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1 });
+*/
 /*Font end slide in*/
 gsap.from(".frontend", {
   scrollTrigger: ".frontend",
@@ -133,7 +133,7 @@ gsap.from(".frontend", {
   xPercent: 20,
   ease: Power2.easeInOut,
   duration: 1,
-  stager: 0.1,
+  delay: 0.5,
 });
 /*photo roll in*/
 gsap.from(".photo", {
