@@ -87,14 +87,15 @@ nav a.active {
 /*Hello page*/
 .intro {
   background: linear-gradient(
-    90deg,
-    rgba(20, 37, 43, 0.8) 0%,
-    rgba(27, 50, 58, 0.8) 15%,
-    rgba(27, 50, 58, 0.8) 50%,
-    rgba(27, 50, 58, 0.8) 85%,
-    rgba(20, 37, 43, 0.8) 100%
-  ),
-    url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950") no-repeat center center fixed;
+      90deg,
+      rgba(20, 37, 43, 0.8) 0%,
+      rgba(27, 50, 58, 0.8) 15%,
+      rgba(27, 50, 58, 0.8) 50%,
+      rgba(27, 50, 58, 0.8) 85%,
+      rgba(20, 37, 43, 0.8) 100%
+    ),
+    url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950")
+      no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -109,7 +110,6 @@ nav a.active {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
 }
-
 
 /*I'm Andrea*/
 .name {
@@ -175,7 +175,7 @@ nav a.active {
 }
 
 .arrow {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
   color: white;
   align-self: center;
   margin-top: 100px;
@@ -183,7 +183,7 @@ nav a.active {
 }
 
 @keyframes float {
-  0%, 
+  0%,
   100% {
     transform: translateY(-10%);
   }
@@ -266,7 +266,7 @@ nav a.active {
   background-color: #375561;
   border-radius: 10px;
   margin-top: 20px;
-   /*-webkit-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.5); 
+  /*-webkit-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.5); 
 box-shadow: inset 0px 0px 3px 2px rgba(0, 0, 0, 0.5);*/
   border-radius: 5px;
 }
@@ -285,7 +285,11 @@ box-shadow: inset 0px 0px 3px 2px rgba(0, 0, 0, 0.5);*/
     rgba(97, 150, 169, 1) 0%,
     rgba(189, 150, 253, 1) 100%
   );*/
-  background: linear-gradient(90deg, rgba(97,150,169,1) 0%, rgba(157,220,242,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(97, 150, 169, 1) 0%,
+    rgba(157, 220, 242, 1) 100%
+  );
   /*-webkit-box-shadow: inset 0px 0px 3px 1px rgba(255, 255, 255, 0.85); 
 box-shadow: inset 0px 0px 3px 2px rgba(255, 255, 255, 0.85);*/
   border-radius: 5px;
@@ -333,7 +337,6 @@ box-shadow: inset 0px 0px 3px 2px rgba(255, 255, 255, 0.85);*/
     -7px 0px 1px 1px rgba(45,70,79,0.44); 
 box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
   -2px 0px 1px 1px rgba(45,70,79,0.44);*/
-  
 }
 
 .bar:nth-child(1) abbr {
@@ -434,14 +437,15 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    90deg,
-    rgba(20, 37, 43, 0.8) 0%,
-    rgba(27, 50, 58, 0.8) 15%,
-    rgba(27, 50, 58, 0.8) 50%,
-    rgba(27, 50, 58, 0.8) 85%,
-    rgba(20, 37, 43, 0.8) 100%
-  ),
-    url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950") no-repeat center center fixed;
+      90deg,
+      rgba(20, 37, 43, 0.8) 0%,
+      rgba(27, 50, 58, 0.8) 15%,
+      rgba(27, 50, 58, 0.8) 50%,
+      rgba(27, 50, 58, 0.8) 85%,
+      rgba(20, 37, 43, 0.8) 100%
+    ),
+    url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950")
+      no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -454,7 +458,7 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
   color: white;
 }
 
-/*Desktop*/
+/*____________________________________________Desktop_____________________________________________________________*/
 @media screen and (min-width: 1024px) {
   nav a {
     line-height: 32px;
@@ -637,15 +641,13 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
     position: relative;
     transition: 0.3s;
   }
-  
+
   #inTouch {
     margin-top: 300px;
   }
 }
 
-
-
-/*Phone & Tablet*/
+/*_____________________________________________Phone & Tablet_____________________________________________________*/
 @media screen and (max-width: 1023px) {
   .fa-bars {
     color: white;
@@ -760,11 +762,11 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
     margin-left: 20px;
     z-index: 200;
   }
-  
+
   .discover {
     margin-bottom: 50px;
   }
-  
+
   .design {
     margin-bottom: 50px;
   }
@@ -805,18 +807,15 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
   #competence {
     margin-top: 150px;
   }
-  
+
   #realisation {
     margin-top: 150px;
   }
-  
+
   #inTouch {
     margin-top: 150px;
   }
 }
-
-
-
 
 /*Hello neon animation*/
 .hello {
