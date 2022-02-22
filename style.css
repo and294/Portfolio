@@ -1039,7 +1039,11 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
 
 /*_______________________________________________Contact form____________________________________________________*/
 .contactPage {
+  padding-top: 50px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background: linear-gradient(
       90deg,
       rgba(20, 37, 43, 0.8) 0%,
@@ -1057,7 +1061,6 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
 }
 
 .contactForm {
-  padding-top: 50px;
   color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
