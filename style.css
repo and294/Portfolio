@@ -1136,4 +1136,38 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
   background-image: url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Button%20fill.svg?v=1645528098453");
 }
 
-.callMe
+.callMe {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  justify-content: center;
+  border: dashed rgba(27, 50, 58, 1);
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  border: dashed 1px rgb(97, 150, 169);
+  background: rgba(97, 150, 169, 0);
+  background-position: 0 -200%;
+  background-repeat: repeat-x;
+  transition: background-position 1s ease;
+}
+
+.callMe:hover {
+  background-position: 100% 50%;
+  color: white;
+}
+
+.callMe:hover span {
+  display: none
+}
+
+.callMe:hover:before {
+  content: "Reply!"
+}
+
+.liquidBackCall {
+  background-image: url("https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Button%20fill%20Call%20me.svg?v=1645612268264");
+}
