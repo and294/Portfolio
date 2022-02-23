@@ -435,6 +435,8 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
 
 .formLink {
   display: flex;
+  font-size: 50px;
+  padding: 5px;
   flex-direction: column;
   aspect-ratio: 1;
   border-radius: 100%;
@@ -1091,7 +1093,8 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
   margin-bottom: -200px;
 }
 
-.nameInput, .mailInput {
+.nameInput,
+.mailInput {
   width: 30vw;
 }
 
@@ -1103,7 +1106,6 @@ box-shadow: inset -2px 2px 2px 2px rgba(45, 70, 79, 0.4),
 .messageInput {
   width: 80vw;
   height: 30vh;
-
 }
 
 .send {
