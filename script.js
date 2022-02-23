@@ -305,7 +305,7 @@ gsap.from(".tile", {
 
 function copyPhoneNumber() {
   /* Get the text field */
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("phoneNumber");
 
   /* Select the text field */
   copyText.select();
