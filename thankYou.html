@@ -30,6 +30,7 @@
 
     <!--Javascript file -->
     <script src="/script.js" defer></script>
+    <script src="/curtain.js" defer></script>
     <script
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       data-auto-replace-svg
@@ -49,37 +50,10 @@
 
   </head>
 
-  <section class="contactPage">
-    <h1 class="dropMeALine">Drop me a line</h1>
-
-    <form
-      action="https://formspree.io/f/mleznjjy"
-      method="POST"
-      class="contactForm"
-    >
-      <div class="contactName">
-        Name<br />
-        <input type="text" name="name" class="nameInput" />
-      </div>
-      <div class="contactMail">
-        E-mail<br />
-        <input type="email" name="_replyto" class="mailInput" />
-      </div>
-      <div class="contactMessage">
-        Message<br />
-        <input type="text" name="message" size="50" class="messageInput" />
-      </div>
-      <input type="submit" value="Submit" class="send liquidbg" />
-      <input type="reset" value="Reset" class="reset liquidbg" />
-      <input type="hidden" name="_next" value="https://andreaferraro.fr/thankYou.html" />
-    </form>
-
-    <h1 class="or">or</h1>
-
-    <h1 class="callMe liquidBackCall" onclick="copyPhoneNumber()">
-      <span id="phoneNumber" value="+33687802206">Call me</span>
+  <section class="thanksPage">
+   <h1 class="thanksMessage">
+     Thanks for the message, I will get in touch shortly !
     </h1>
-
     <a href="/index.html" class="back">Back to main page</a>
   </section>
 </html>
