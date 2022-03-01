@@ -1200,6 +1200,11 @@ margin-left: 5px;
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
+  transition: 0.1s ease-in;
+}
+
+.back:hover {
+  font-size: 18px;
 }
 
 .thanksPage {
