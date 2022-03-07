@@ -1,3 +1,5 @@
+
+
 /*Highlight section when scrolled by*/
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav a");
@@ -88,6 +90,7 @@ gsap.from(".intro", {
   duration: 1,
   stager: 0.1,
 });
+
 
 /*Photo scale*/
 gsap.from(".moi", {
@@ -191,6 +194,18 @@ gsap.from(".service", {
   y: 50,
   duration: 1,
 });
+
+
+
+/*Parallax effect on services*/
+
+
+  var scene = document.getElementById('serviceGrid');
+  if (window.innerWidth > 1023) {
+    var parallaxInstance = new Parallax(scene);
+  }
+
+
 
 /*discover slide in*/
 gsap.from(".discoverEntrance", {
@@ -300,6 +315,22 @@ gsap.from(".tile", {
   opacity: 0,
   stager: { eact: 0.5 },
 });
+
+/*parallax get in touch section*/
+
+gsap.to(".inTouch", {
+  yPercent: -100, 
+  ease: "none",
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#container",
+    start: "top top",
+    end: "+=300%",
+    scrub: true,
+    pin: true
+  }
+});
+
 
 /*Copy Phone to clipboard*/
 

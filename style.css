@@ -395,6 +395,7 @@ nav a.active {
   z-index: 20;
   position: absolute;
   transform: scale(1.1);
+
 }
 
 /*contacts*/
@@ -750,7 +751,7 @@ nav a.active {
   }
 
   .discover {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .design {
