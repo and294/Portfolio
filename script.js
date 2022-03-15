@@ -211,7 +211,7 @@ gsap.from(".service", {
 gsap.from(".discoverEntrance", {
   scrollTrigger: {
     trigger: ".discoverEntrance",
-    start: "top 80%",
+    start: "top 90%",
   },
   autoAlpha: 0,
   opacity: 0,
@@ -225,7 +225,7 @@ gsap.from(".discoverEntrance", {
 gsap.from(".designEntrance", {
   scrollTrigger: {
     trigger: ".designEntrance",
-    start: "top 70%",
+    start: "top 80%",
   },
   autoAlpha: 0,
   opacity: 0,
@@ -239,7 +239,7 @@ gsap.from(".designEntrance", {
 gsap.from(".codeEntrance", {
   scrollTrigger: {
     trigger: ".codeEntrance",
-    start: "top 60%",
+    start: "top 70%",
   },
   autoAlpha: 0,
   opacity: 0,
