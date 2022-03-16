@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mousePosY = e.pageY;
     }
 
-    let delay = 12,
+    let delay = 6,
         revisedMousePosX = 0,
         revisedMousePosY = 0;
 
