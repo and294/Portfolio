@@ -13,16 +13,46 @@ html {
   box-sizing: inherit;
 }
 
-#mouse-circle {
+/*Circle following cursor*/
+.mouse-circle {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: -32px 0px 0px -32px;
     border: 2px solid rgb(97, 150, 169);
     border-radius: 50%;
     pointer-events: none !important;
     box-shadow: 0 0 16px rgba(255, 255, 255, 0);
     z-index: 1000;
+}
+
+/*Text around cursor when hovering over projects*/
+.exploreCircle {
+    width: 150px;
+    position: absolute;
+    animation: rotation 10s infinite linear;
+    pointer-events: none;
+    border-radius: 50%;
+    pointer-events: none !important;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+    z-index: 1000;
+    overflow: hidden;
+  display: none;
+}
+
+text {
+    font-size: 3.5em;
+    fill: rgb(97, 150, 169);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 /* adjust typography defaults*/
@@ -40,18 +70,26 @@ body {
 }
 
 h1,
-p,
 h2 {
-  font-family: "Quattrocento", serif;
+  font-family: "Montserrat", sans-serif;
+  /*font-family: "Oswald", sans-serif;*/
+  /*font-family: "Quattrocento", serif;*/
   color: black;
 }
 
 p {
+  font-family: "Quattrocento", serif;
   font-size: 20px;
+  color: black;
 }
 
 .text {
   font-size: 40px;
+}
+
+hr {
+  color: #6196a9;
+  opacity: 0.4
 }
 
 /*sliding nav doesn't show on desktop*/
@@ -129,13 +167,15 @@ nav a.active {
 
 /*I'm Andrea*/
 .name {
-  font-family: "Bodoni Moda", serif;
+  font-family: 'Cinzel', serif;
+  /*font-family: "Bodoni Moda", serif;*/
   font-size: 10em;
   color: white;
 }
 
 .frontend {
-  font-family: "Quattrocento", serif;
+  font-family: "Montserrat", sans-serif;
+  /*font-family: "Quattrocento", serif;*/
   font-size: 40px;
   color: rgba(20, 37, 43, 0);
   align-self: center;
@@ -173,8 +213,8 @@ nav a.active {
   font-family: "Spartan", sans-serif;
   color: white;
   align-self: center;
-  margin-top: 100px;
   animation: float 1s linear infinite;
+  margin-top: 50px;
 }
 
 @keyframes float {
@@ -353,6 +393,10 @@ nav a.active {
   justify-content: center;
 }
 
+.appTitle{
+  margin-bottom: 2em;
+}
+
 .Protiles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -409,6 +453,33 @@ nav a.active {
   transform: scale(1.1);
 
 }
+
+/*Web projects*/
+.webTitle {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.webSite {
+  /*display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px; */
+}
+
+.webImg {
+  width: 80vw;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.webImg:hover {
+ cursor: pointer; 
+ 
+}
+
 
 /*contacts*/
 #inTouch {
@@ -648,7 +719,15 @@ nav a.active {
 
 /*_____________________________________________Phone & Tablet_____________________________________________________*/
 @media screen and (max-width: 1023px) {
-  #mouse-circle {
+  .mouse-circle {
+    display: none;
+  }
+  
+  .exploreCircle {
+    display: none;
+  }
+  
+  .pointer {
     display: none;
   }
     
@@ -722,6 +801,10 @@ nav a.active {
   .frontend {
     font-size: 25px;
     margin-bottom: 6em;
+  }
+  
+  .arrow {
+    margin-bottom: 1000px;
   }
 
   .photo {
@@ -822,7 +905,16 @@ nav a.active {
   #realisation {
     margin-top: 150px;
   }
-
+  
+  .webSite {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .webImg {
+    margin-bottom: 30px;
+  }
+  
   #inTouch {
     margin-top: 150px;
   }
@@ -1110,6 +1202,8 @@ margin-left: 5px;
 .nameInput,
 .mailInput {
   width: 30vw;
+  min-width: 150px;
+  height: 2em;
   border-radius: 5px;
   border: none;
 }
@@ -1214,15 +1308,26 @@ margin-left: 5px;
 }
 
 .back {
-  color: white;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  color: #6196a9;
+  font-weight: 700;
+  padding: 1em 2em;
+  border-radius: 50px;
+  border: dashed 2px #6196a9;
+  bottom: 5px;
+  right: 5px;
   text-decoration: none;
-  margin-bottom: 20px;
-  transition: 0.1s ease-in;
 }
 
 .back:hover {
-  font-size: 18px;
+  background-color: #6196a9;
+  color: white;
+  transition: 0.5s ease-in-out;
+
 }
+
 
 .thanksPage {
   padding-top: 50px;
@@ -1251,3 +1356,4 @@ margin-left: 5px;
 .thanksMessage {
   color: white;
 }
+
