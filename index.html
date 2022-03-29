@@ -4,8 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-site-verification" content="v4NjTaRIdWB53AqedOVlPeZvg-_TZOpXFWjdwsnMNDo" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
       rel="stylesheet"
@@ -26,33 +24,31 @@
       href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet"> 
     <!-- stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!--Javascript file -->
     <script src="/script.js" defer></script>
-    <script src="/magnetic-element.js" defer></script>
     <script async src="/mouseCircle.js" defer></script>
-    <script src="/curtain.js" defer></script>
     <script
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       data-auto-replace-svg
     ></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
 
     <title>Portfolio</title>
   </head>
 
-  <body>
+  <body data-barba="wrapper">
+    
     <!-- -->
     <button class="mobile-nav-toggle">
       <span class="burger first" aria-expended="false"><hr /></span>
@@ -60,31 +56,30 @@
       <span class="burger third" aria-expended="false"><hr /></span>
     </button>
     <nav data-visible="false" id="sideNav" class="nav">
-      <a class="presentation" href="#presentation">About</a>
-      <a class="competence" href="#skills">Skills</a>
-      <a class="realisation" href="#projects">Projets</a>
-      <a class="inTouch" href="#contact">Contact</a>
+      <a class="presentation navItem" href="#presentation">About</a>
+      <a class="competence navItem" href="#skills">Skills</a>
+      <a class="realisation navItem" href="#projects">Projets</a>
+      <a class="inTouch navItem" href="#contact">Contact</a>
     </nav>
 
     <!-- -->
     <div class="main">
+      <main data-barba="container" data-barba-namespace="home">
       <section class="panel intro">
         <!--<img class="sea" src="https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Sea%20Background.svg?v=1645188036950" />-->
         <h1 class="hello">
           <span class="fast-flicker">H</span>el<span class="flicker">l</span>o
         </h1>
-        <h1 class="name">Hello, I'm <bold>Andrea</bold></h1>
+        <h1 class="name"><bold>Andrea Ferraro</bold></h1>
         <h2 class="frontend" data-text="Front end developer">
           Front end developer
         </h2>
         <h1 class="arrow">V</h1>
-
-        <!--<p class="photo">Photo</p>-->
       </section>
 
       <!-- -->
       <section class="panel" id="presentation">
-        <p class="title propo">Who am I ?</p>
+        <h1 class="title propo">Who am I ?</h1>
         <hr class="hr1" size="2" width="10%" />
         <p class="bio" id="cvPres">
           I am a <strong>self thaught front-end developer</strong> from
@@ -103,7 +98,7 @@
         </p>
         <br /><br />
 
-        <p class="title service">What I can do for you</p>
+        <h1 class="title service">What I can do for you</h1>
         <div class="serviceGrid" id="serviceGrid">
           <div class="discover" data-depth="0.2">
             <h2 class="serviceTitle discoverEntrance">
@@ -150,7 +145,7 @@
 
       <!-- -->
       <section class="panel" id="competence">
-        <p class="title skill" id="skills">Skills</p>
+        <h1 class="title skill" id="skills">Skills</h1>
         <hr class="hr2" size="2" width="10%" />
         <div class="wrap">
           <div class="column1">
@@ -195,8 +190,9 @@
 
       <!-- -->
       <section class="panel" id="realisation">
-        <p class="title project" id="projects">Projects</p>
+        <h1 class="title project" id="projects">Projects</h1>
         <hr class="hr3" size="2" width="10%" />
+        <h2 class="appTitle">Apps</h2>
         <div class="Protiles">
           <div id="tile1" class="tile">
             <a href="https://translator-react.glitch.me/" target="blank"
@@ -263,6 +259,17 @@
             /></a>
           </div>
         </div>
+        <h2 class="webTitle">
+            Websites
+          </h2>
+        
+        <div class="webSite">
+          <a href="/tudor.html">
+            <img class="webImg tudor"
+               src="https://cdn.glitch.global/29bb2b32-fce5-4722-865e-e2da53f492d5/Group%201BB58%20landing.png?v=1648549739929"
+               loading="lazy"/>
+        </a>
+        </div>
       </section>
 
       <!-- -->
@@ -272,7 +279,29 @@
             >Let's get in touch !</a>
         </p>
       </section>
-      <div id="mouse-circle"></div>
+      
+      <!--Mouse animation elements-->
+      <div class="mouse-circle"></div>
+       <svg class="exploreCircle" xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+        <title>Circular Text Path</title>
+         
+        <defs>
+            <path id="textcircle"
+                d="M250,400
+                    a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                transform="rotate(12,250,250)"/>
+        </defs>
+        <rect width="100%" height="100%" fill="none" />
+        <text>
+            <textPath xlink:href="#textcircle"
+                    aria-label="All for One &amp; One for All"
+                    textLength="942">EXPLORE &#8226 EXPLORE &#8226 EXPLORE &#8226</textPath>
+        </text>
+    </svg>
+         
+       </main>
     </div>
+     
   </body>
 </html>
