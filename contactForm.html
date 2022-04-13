@@ -27,9 +27,11 @@
     />
     <!-- stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/tudor.css" />
 
     <!--Javascript file -->
     <script src="/script.js" defer></script>
+    <script src="/transition.js" defer></script>
     <script async src="/mouseCircle.js" defer></script>
 
     <script
@@ -45,6 +47,11 @@
   </head>
 
   <body data-barba="wrapper">
+    
+  <div class="loader">
+        <div class="page-transition"></div>
+    </div>
+    
     <main data-barba="container" data-barba-namespace="contact">
       <section class="contactPage">
         <h1 class="dropMeALine">Contact</h1>
@@ -82,7 +89,7 @@
 
         <a href="/index.html" class="back">Back to main page</a>
       </section>
-       <div class="mouse-circle"></div>
+      <div class="mouse-circle"></div>
     </main>
   </body>
 </html>
