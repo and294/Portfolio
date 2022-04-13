@@ -5,6 +5,7 @@ html {
   --s: 100px; /* size  */
   --m: 4px; /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+  scroll-behavior: smooth;
 }
 
 *,
@@ -1357,3 +1358,21 @@ margin-left: 5px;
   color: white;
 }
 
+
+/*---------------------------Barba transition------------------------------------------*/
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+}
+.page-transition{
+    position: absolute;
+    top: 0;
+    background-color: #c44b4f;
+    width: 100%;
+    height: 0%;
+}

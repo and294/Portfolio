@@ -1,45 +1,66 @@
-const wipe = document.querySelector('.wipe-transition');
-const allBandes = document.querySelectorAll('.bande');
-const TLAnim = new TimelineMax();
+/*pageTransition = () => {
+    var timeline = gsap.timeline();
 
-function delay(n) {
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n)
-  })
+
+    timeline.to(".page-transition", {
+        duration: 1,
+        height: "100%",
+        top: "0%"
+    });
+
+    timeline.to(".page-transition", {
+        duration: .8,
+        height: "100%",
+        top: "100%",
+        delay: .3
+    });
+
+    timeline.set(".page-transition", {
+        top: "-100%"
+    });
+}
+
+mainAnimation = () => {
+    var timeline = gsap.timeline();
+    
+    timeline.from(".container h1, .menu-items li, .logo", {
+        duration: 1,
+        y: 30,
+        opacity: 0,
+        stagger: {
+            amount: .4
+        },
+        delay: .8
+    });
+}
+
+delay = (n) => {
+    n = n || 2000;
+    return new Promise((done)=> {
+        setTimeout(()=> {
+            done();
+        }, n);
+    })
 }
 
 barba.init({
+    sync: true,
+    transitions: [
+        {
+            async leave(data){
+                const done = this.async();
+                pageTransition();
+                await delay(1000);
+                done();
+            },
 
-  sync: true,
+            async enter (data){
+                mainAnimation();
+            },
 
-  transitions: [
-    {
-      async leave(){
-
-        const done = this.async();
-
-        TLAnim
-        .to(allBandes, {height: '100%', stagger: 0.05})
-
-        // TLAnim.to(wipe, {left: '0%', ease: "power2.out", duration: 0.5});
-
-        await delay(1500);
-        done();
-
-      },
-      enter(){
-
-        // TLAnim
-        // .to(wipe, {left: '100%', ease:"power2.in", duration: 0.5})
-        // .set(wipe, {left: '-100%'})
-
-        TLAnim
-        .to(allBandes, {height: '0%', stagger: 0.05})
-
-      }
-    }
-  ]
-
-})
+            async once(data){
+                mainAnimation();
+            }
+        }
+    ]
+});*/
