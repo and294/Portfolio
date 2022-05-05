@@ -474,6 +474,7 @@ nav a.active {
   max-width: 600px;
   border-radius: 10px;
   overflow: hidden;
+  margin: 5px;
 }
 
 .webImg:hover {
