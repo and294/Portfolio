@@ -491,16 +491,17 @@ nav a.active {
 }
 
 .webSite {
-  /*display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 40px;
-  grid-row-gap: 0px; */
+  grid-row-gap: 40px; 
 }
 
 .webImg {
   width: 80vw;
   max-width: 600px;
+  max-height: 370px;
   border-radius: 10px;
   overflow: hidden;
   margin: 5px;
@@ -624,13 +625,6 @@ nav a.active {
     flex-direction: column;
   }
 
-  @media screen and (max-width: 1281px) {
-    .photo {
-      width: 250px;
-      aspect-ratio: 1;
-      margin-left: 2vw;
-    }
-  }
 
   #propo {
     margin-top: 50px;
@@ -711,8 +705,15 @@ nav a.active {
 
   #competence {
     background: white;
+    margin-top: 1200px;
+  }
+   @media screen and (min-width: 1440px) {
+    #competence {
     margin-top: 800px;
   }
+  }
+  
+  
   .wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -921,6 +922,7 @@ nav a.active {
 
   #competence {
     margin-top: 150px;
+    @media and screen()
   }
 
   .bar:nth-child(2) abbr {
@@ -961,218 +963,6 @@ nav a.active {
 
   .reset {
     margin-left: 5px;
-  }
-}
-
-/*____________________________________________Hello neon animation_______________________________________________*/
-.hello {
-  letter-spacing: 2;
-  font-size: 40px;
-  color: #faeaff;
-  text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem #bd96fd,
-    -0.2rem 0.1rem 1rem #bd96fd, 0.2rem 0.1rem 1rem #bd96fd,
-    0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
-  animation: shine 2s forwards, flicker 3s infinite;
-}
-
-@keyframes blink {
-  0%,
-  22%,
-  36%,
-  75% {
-    color: #faeaff;
-    text-shadow: 0 0 0.6rem #faeaff, 0 0 1.5rem, -0.2rem 0.1rem 1rem,
-      0.2rem 0.1rem 1rem, 0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
-  }
-  28%,
-  33% {
-    color: #bd96fd;
-    text-shadow: none;
-  }
-  82%,
-  97% {
-    color: #bd96fd;
-    text-shadow: none;
-  }
-}
-
-.flicker {
-  animation: shine 2s forwards, blink 3s 2s infinite;
-}
-
-.fast-flicker {
-  animation: shine 2s forwards, blink 10s 1s infinite;
-}
-
-@keyframes shine {
-  0% {
-    color: #6b1839;
-    text-shadow: none;
-  }
-  100% {
-    color: #faeaff#bd96fd;
-    text-shadow: 0 0 0.6rem #faeaff#bd96fd, 0 0 1.5rem #bd96fd,
-      -0.2rem 0.1rem 1rem #bd96fd, 0.2rem 0.1rem 1rem #bd96fd,
-      0 -0.5rem 2rem #bd96fd, 0 0.5rem 3rem #bd96fd;
-  }
-}
-
-@keyframes flicker {
-  from {
-    opacity: 1;
-  }
-
-  4% {
-    opacity: 0.9;
-  }
-
-  6% {
-    opacity: 0.85;
-  }
-
-  8% {
-    opacity: 0.95;
-  }
-
-  10% {
-    opacity: 0.9;
-  }
-
-  11% {
-    opacity: 0.922;
-  }
-
-  12% {
-    opacity: 0.9;
-  }
-
-  14% {
-    opacity: 0.95;
-  }
-
-  16% {
-    opacity: 0.98;
-  }
-
-  17% {
-    opacity: 0.9;
-  }
-
-  19% {
-    opacity: 0.93;
-  }
-
-  20% {
-    opacity: 0.99;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  26% {
-    opacity: 0.94;
-  }
-
-  28% {
-    opacity: 0.98;
-  }
-
-  37% {
-    opacity: 0.93;
-  }
-
-  38% {
-    opacity: 0.5;
-  }
-
-  39% {
-    opacity: 0.96;
-  }
-
-  42% {
-    opacity: 1;
-  }
-
-  44% {
-    opacity: 0.97;
-  }
-
-  46% {
-    opacity: 0.94;
-  }
-
-  56% {
-    opacity: 0.9;
-  }
-
-  58% {
-    opacity: 0.9;
-  }
-
-  60% {
-    opacity: 0.99;
-  }
-
-  68% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.9;
-  }
-
-  72% {
-    opacity: 0.95;
-  }
-
-  93% {
-    opacity: 0.93;
-  }
-
-  95% {
-    opacity: 0.95;
-  }
-
-  97% {
-    opacity: 0.93;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes hello {
-  0% {
-    -webkit-transform: rotateX(-100deg);
-    transform: rotateX(-100deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 1;
-  }
-}
-@keyframes swing-in-top-fwd {
-  0% {
-    -webkit-transform: rotateX(-100deg);
-    transform: rotateX(-100deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 1;
   }
 }
 
